@@ -377,4 +377,11 @@ template {
   box-sizing: border-box;
 }
 
+/* line 9, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+body {
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.42857;
+}
+
 /*# sourceMappingURL=application.css.map */
