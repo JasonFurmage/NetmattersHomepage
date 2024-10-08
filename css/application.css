@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,800;1,600&display=swap");
 /* line 11, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_normalize.scss */
 html {
   line-height: 1.15;
