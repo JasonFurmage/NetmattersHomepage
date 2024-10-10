@@ -5,6 +5,8 @@
 .license {
     @include flex($dir: column);
     font-size: em(13px);
+    color: $color-white;
+    background-color: $color-license-bg;
 
     @include mq(small) {
         flex-direction: row;

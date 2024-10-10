@@ -397,6 +397,8 @@ body {
   display: flex;
   flex-direction: column;
   font-size: 0.8125em;
+  color: white;
+  background-color: #212330;
 }
 
 @media (min-width: 768px) {
