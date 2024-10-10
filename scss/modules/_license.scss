@@ -1,6 +1,12 @@
 // ==========================================================================
-// Index
+// License
 // ==========================================================================
 
-@import "container";
-@import "license";
+.license {
+    @include flex($dir: column);
+
+    @include mq(small) {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
