@@ -381,6 +381,7 @@ template {
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  letter-spacing: 0.4px;
   line-height: 1.42857;
 }
 
