@@ -384,4 +384,26 @@ body {
   line-height: 1.42857;
 }
 
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_license.scss */
+.license {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  /* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_license.scss */
+  .license {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
 /*# sourceMappingURL=application.css.map */
