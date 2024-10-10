@@ -4,6 +4,7 @@
 
 .license {
     @include flex($dir: column);
+    font-size: em(13px);
 
     @include mq(small) {
         flex-direction: row;
