@@ -7,14 +7,23 @@
     padding-top: 10px;
 
     @include e(text) {
-        @include flex($dir: column);
         @include text($size: rem(13px), $color: $color-white);
         padding-top: 5px;
         padding-bottom: 11.5px;
+    }
+
+    @include e(sitemap) {
+        @media (max-width: $brkpoint-sm - 1) {
+            display: block;
+            margin-top: -0.2px;
+        }
 
         @include mq(small) {
-            flex-direction: row;
-            gap: 0.346em;
+            &:before {
+                content: '-';
+                margin-left: 6.15px;
+                margin-right: 9px;
+            }
         }
     }
 }
