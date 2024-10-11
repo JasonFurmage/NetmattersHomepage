@@ -2,6 +2,22 @@
 // Mixins
 // ==========================================================================
 
+@mixin e($elements...) {
+	@each $element in $elements {
+		&__#{$element} {
+		@content;
+		}
+	}
+}
+  
+@mixin m($modifiers...) {
+	@each $modifier in $modifiers {
+		&--#{$modifier} {
+		@content;
+		}
+	}
+}
+
 @mixin flex($disp: flex, $dir: null, $wrap: null, $just: null, $algn: null) {
 	display: $disp;
 	flex-direction: $dir;
