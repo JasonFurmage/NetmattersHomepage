@@ -8,8 +8,7 @@
 
     @include e(text) {
         @include flex($dir: column);
-        font-size: rem(13px);
-        color: $color-white;
+        @include text($size: rem(13px), $color: $color-white);
         padding-top: 5px;
         padding-bottom: 11.5px;
 

@@ -26,6 +26,14 @@
 	align-items: $algn;
 }
 
+@mixin text($size: null, $weight: null, $height: null, $align: null, $color: null) {
+    font-size: $size;
+    font-weight: $weight;
+	line-height: $height;
+    text-align: $align;
+    color: $color;
+}
+
 @mixin mq($break) {
 	@if $break == "x-small" {
 	  @media (min-width: $brkpoint-xs) {
