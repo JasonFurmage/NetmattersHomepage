@@ -34,6 +34,26 @@
     color: $color;
 }
 
+@mixin bg-colors($map) {
+	@each $theme, $color in $map {
+	  &--#{$theme} {
+		color: $color-white;
+		background-color: $color;
+		border-color: $color;
+	  }
+	}
+}
+
+@mixin bg-hover-colors($map) {
+	@each $theme, $color in $map {
+	  &--#{$theme} {
+		&:hover {
+		  background-color: $color;
+		}
+	  }
+	}
+}
+
 @mixin mq($break) {
 	@if $break == "x-small" {
 	  @media (min-width: $brkpoint-xs) {
