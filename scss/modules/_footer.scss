@@ -3,5 +3,11 @@
 // ==========================================================================
 
 .footer {
-    
+    background-color: $color-footer-bg;
+    color: $color-white;
+    padding-top: 27px;
+
+    @include mq(large) {
+        padding-top: 47px;
+    }
 }
