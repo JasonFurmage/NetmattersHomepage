@@ -42,6 +42,23 @@
         margin-bottom: 30px;
     }
 
+    @include e(social-media-logo) {
+        text-align: center;
+        font-size: 26px;
+        line-height: 26px;
+        background-color: $color-license-bg;
+        
+        @media (max-width: $brkpoint-xs) {
+            width: 35%;
+        }
+
+        @media (max-width: $brkpoint-lg - 1) {
+            padding: 12px 22px 16px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+    }
+
     @include e(logo) {
         width: 100%;
     }

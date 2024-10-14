@@ -784,6 +784,30 @@ h4 {
 }
 
 /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media-logo {
+  text-align: center;
+  font-size: 26px;
+  line-height: 26px;
+  background-color: #212330;
+}
+
+@media (max-width: 480px) {
+  /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+  .footer__social-media-logo {
+    width: 35%;
+  }
+}
+
+@media (max-width: 1259px) {
+  /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+  .footer__social-media-logo {
+    padding: 12px 22px 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__logo {
   width: 100%;
 }
