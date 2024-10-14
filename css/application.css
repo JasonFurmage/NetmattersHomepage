@@ -390,6 +390,14 @@ img {
   vertical-align: middle;
 }
 
+/* line 20, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+h4 {
+  font-family: inherit;
+  line-height: 1.1;
+  font-weight: 400;
+  margin: 0 0 15px;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */
 .container {
   margin-right: auto;
@@ -443,6 +451,7 @@ img {
 /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
