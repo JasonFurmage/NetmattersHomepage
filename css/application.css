@@ -435,6 +435,12 @@ body {
   justify-content: space-between;
 }
 
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social {
+  display: flex;
+  width: 100%;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_helper.scss */
 .hidden {
   display: none !important;

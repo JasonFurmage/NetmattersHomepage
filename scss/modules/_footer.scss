@@ -14,4 +14,9 @@
     @include e(company) {
         @include flex($wrap: wrap, $just: space-between);
     }
+    
+    @include e(social) {
+        @include flex();
+        width: 100%;
+    }
 }
