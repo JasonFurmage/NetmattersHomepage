@@ -1,9 +1,7 @@
 // ==========================================================================
-// Index
+// Buttons
 // ==========================================================================
 
-@import "buttons";
-@import "container";
-@import "footer";
-@import "helper";
-@import "license";
+.btn {
+    @include bg-colors($colors-btns);
+}
