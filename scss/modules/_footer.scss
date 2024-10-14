@@ -3,11 +3,15 @@
 // ==========================================================================
 
 .footer {
-    background-color: $color-footer-bg;
     color: $color-white;
+    background-color: $color-footer-bg;
     padding-top: 27px;
 
     @include mq(large) {
         padding-top: 47px;
+    }
+
+    @include e(company) {
+        @include flex($wrap: wrap, $just: space-between);
     }
 }

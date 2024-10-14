@@ -416,8 +416,8 @@ body {
 
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_footer.scss */
 .footer {
-  background-color: #323544;
   color: white;
+  background-color: #323544;
   padding-top: 27px;
 }
 
@@ -426,6 +426,13 @@ body {
   .footer {
     padding-top: 47px;
   }
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__company {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_helper.scss */
