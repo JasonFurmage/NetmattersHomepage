@@ -16,7 +16,7 @@
     }
     
     @include e(social) {
-        @include flex();
+        @include flex($wrap: wrap);
         width: 100%;
     }
 
