@@ -7,6 +7,15 @@
     background-color: $color-footer-bg;
     padding-top: 27px;
 
+    @include e(heading) {
+        text-transform: uppercase;
+        margin-bottom: 26px;
+
+        @include m(social) {
+            margin-top: 24px;
+        }
+    }
+
     @include mq(large) {
         padding-top: 47px;
     }
