@@ -397,6 +397,305 @@ h4 {
   margin: 0 0 15px;
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon/icomoon.eot?la0xo6");
+  src: url("../fonts/icomoon/icomoon.eot?la0xo6#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?la0xo6") format("truetype"), url("../fonts/icomoon/icomoon.woff?la0xo6") format("woff"), url("../fonts/icomoon/icomoon.svg?la0xo6#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+/* line 17, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 32, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-computer-desktop:before {
+  content: "\e900";
+}
+
+/* line 35, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-headphones:before {
+  content: "\e901";
+}
+
+/* line 38, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-cloud:before {
+  content: "\e902";
+}
+
+/* line 41, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-bar-graph:before {
+  content: "\e903";
+}
+
+/* line 44, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-transfer:before {
+  content: "\e904";
+}
+
+/* line 47, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-arrows:before {
+  content: "\e904";
+}
+
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-folder-open:before {
+  content: "\e930";
+}
+
+/* line 53, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-display:before {
+  content: "\e956";
+}
+
+/* line 56, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-download3:before {
+  content: "\e9c7";
+}
+
+/* line 59, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-arrow-right2:before {
+  content: "\ea3c";
+}
+
+/* line 62, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+/* line 65, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-instagram:before {
+  content: "\ea92";
+}
+
+/* line 68, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+/* line 71, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+/* line 74, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-shuffle:before {
+  content: "\e905";
+}
+
+/* line 77, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-paperplane:before {
+  content: "\e906";
+}
+
+/* line 80, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-send:before {
+  content: "\e906";
+}
+
+/* line 83, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-flight:before {
+  content: "\e906";
+}
+
+/* line 86, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-email:before {
+  content: "\e906";
+}
+
+/* line 89, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-star:before {
+  content: "\e907";
+}
+
+/* line 92, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-question-circle:before {
+  content: "\e908";
+}
+
+/* line 95, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-lock:before {
+  content: "\e909";
+}
+
+/* line 98, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-flask:before {
+  content: "\e90a";
+}
+
+/* line 101, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-clock-o:before {
+  content: "\e90b";
+}
+
+/* line 104, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-clipboard:before {
+  content: "\e90c";
+}
+
+/* line 107, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-paste:before {
+  content: "\e90c";
+}
+
+/* line 110, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-shopping-cart:before {
+  content: "\e90d";
+}
+
+/* line 113, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-bullhorn:before {
+  content: "\e90e";
+}
+
+/* line 116, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-phone-square:before {
+  content: "\e90f";
+}
+
+/* line 119, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-handshake-o:before {
+  content: "\e910";
+}
+
+/* line 122, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-phone:before {
+  content: "\e911";
+}
+
+/* line 125, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-dashboard:before {
+  content: "\e912";
+}
+
+/* line 128, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-tachometer:before {
+  content: "\e912";
+}
+
+/* line 131, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-ticket:before {
+  content: "\e913";
+}
+
+/* line 134, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-pencil:before {
+  content: "\e914";
+}
+
+/* line 137, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-money:before {
+  content: "\e915";
+}
+
+/* line 140, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-envelope:before {
+  content: "\e916";
+}
+
+/* line 143, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-hdd-o:before {
+  content: "\e917";
+}
+
+/* line 146, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-globe:before {
+  content: "\e918";
+}
+
+/* line 149, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-laptop:before {
+  content: "\e919";
+}
+
+/* line 152, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-cloud-download:before {
+  content: "\e91a";
+}
+
+/* line 155, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-group:before {
+  content: "\e91b";
+}
+
+/* line 158, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-users:before {
+  content: "\e91b";
+}
+
+/* line 161, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-briefcase:before {
+  content: "\e91c";
+}
+
+/* line 164, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-cloud1:before {
+  content: "\e91d";
+}
+
+/* line 167, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-cogs:before {
+  content: "\e91e";
+}
+
+/* line 170, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-gears:before {
+  content: "\e91e";
+}
+
+/* line 173, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-code:before {
+  content: "\e91f";
+}
+
+/* line 176, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-search:before {
+  content: "\e920";
+}
+
+/* line 179, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-trending_up:before {
+  content: "\e921";
+}
+
+/* line 182, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-phone_iphone:before {
+  content: "\e922";
+}
+
+/* line 185, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-school:before {
+  content: "\e923";
+}
+
+/* line 188, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-security:before {
+  content: "\e924";
+}
+
+/* line 191, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-mouse:before {
+  content: "\e925";
+}
+
+/* line 194, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_icons.scss */
+.icon-phone_in_talk:before {
+  content: "\e926";
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */
 .container {
   margin-right: auto;
@@ -475,6 +774,13 @@ h4 {
   .footer__logo-wrapper {
     width: 320px;
   }
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 
 /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
