@@ -392,7 +392,6 @@ img {
 
 /* line 20, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 h4 {
-  font-family: inherit;
   line-height: 1.1;
   font-weight: 400;
   margin: 0 0 15px;
@@ -432,6 +431,17 @@ h4 {
   color: white;
   background-color: #323544;
   padding-top: 27px;
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__heading {
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+/* line 15, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__heading--social {
+  margin-top: 24px;
 }
 
 @media (min-width: 1260px) {
