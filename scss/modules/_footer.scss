@@ -43,17 +43,18 @@
     }
 
     @include e(social-media-logo) {
-        text-align: center;
-        font-size: 26px;
-        line-height: 26px;
+        @include text($size: 26px, $align: center, $height: 26px);
+        @include flex($just: center);
+        @include bg-hover-colors($colors-social-media);
         background-color: $color-license-bg;
+        padding: 16px 22px;
+        margin-right: 7px;
         
         @media (max-width: $brkpoint-xs) {
             width: 35%;
         }
 
         @media (max-width: $brkpoint-lg - 1) {
-            padding: 12px 22px 16px;
             margin-right: 10px;
             margin-bottom: 10px;
         }

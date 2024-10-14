@@ -397,6 +397,11 @@ h4 {
   margin: 0 0 15px;
 }
 
+/* line 26, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon/icomoon.eot?la0xo6");
@@ -696,6 +701,13 @@ h4 {
   content: "\e926";
 }
 
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--primary {
+  color: white;
+  background-color: #333645;
+  border-color: #333645;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */
 .container {
   margin-right: auto;
@@ -785,10 +797,34 @@ h4 {
 
 /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social-media-logo {
-  text-align: center;
   font-size: 26px;
   line-height: 26px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
   background-color: #212330;
+  padding: 16px 22px;
+  margin-right: 7px;
+}
+
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media-logo--facebook:hover {
+  background-color: #3b5998;
+}
+
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media-logo--linkedin:hover {
+  background-color: #0077b5;
+}
+
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media-logo--twitter:hover {
+  background-color: #00aced;
+}
+
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.footer__social-media-logo--instagram:hover {
+  background-color: #d93175;
 }
 
 @media (max-width: 480px) {
@@ -801,7 +837,6 @@ h4 {
 @media (max-width: 1259px) {
   /* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
   .footer__social-media-logo {
-    padding: 12px 22px 16px;
     margin-right: 10px;
     margin-bottom: 10px;
   }
