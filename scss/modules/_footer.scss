@@ -37,6 +37,11 @@
         }
     }
 
+    @include e(social-media) {
+        @include flex($wrap: wrap);
+        margin-bottom: 30px;
+    }
+
     @include e(logo) {
         width: 100%;
     }
