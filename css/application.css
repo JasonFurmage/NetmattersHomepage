@@ -752,6 +752,7 @@ a {
 
 /* line 15, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__heading--social {
+  width: 100%;
   margin-top: 24px;
 }
 

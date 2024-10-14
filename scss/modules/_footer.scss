@@ -12,6 +12,7 @@
         margin-bottom: 26px;
 
         @include m(social) {
+            width: 100%;
             margin-top: 24px;
         }
     }
