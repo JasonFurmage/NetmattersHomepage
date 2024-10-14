@@ -19,4 +19,16 @@
         @include flex();
         width: 100%;
     }
+
+    @include e(logo-wrapper) {
+        width: 250px;
+
+        @include mq(x-small) {
+            width: 320px;
+        }
+    }
+
+    @include e(logo) {
+        width: 100%;
+    }
 }
