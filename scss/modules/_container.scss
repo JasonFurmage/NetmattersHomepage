@@ -8,7 +8,7 @@
     padding-left: 15px;
     padding-right: 15px;
 
-    @include mq(small) { width: $container-width-sm; }
-    @include mq(medium) { width: $container-width-md; }
-    @include mq(large) { width: $container-width-lg; }
+    @include mq(small) { width: $container-width--sm; }
+    @include mq(medium) { width: $container-width--md; }
+    @include mq(large) { width: $container-width--lg; }
 }

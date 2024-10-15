@@ -3,17 +3,16 @@
 // ==========================================================================
 
 .license {
-    background-color: $color-license-bg;
+    background-color: $color--license-bg;
     padding-top: 10px;
 
     @include e(text) {
-        @include text($size: rem(13px), $color: $color-white);
-        padding-top: 5px;
-        padding-bottom: 11.5px;
+        @include text($size: rem(13px), $color: $color--white);
+        padding: 5px 0 11.5px;
     }
 
     @include e(sitemap) {
-        @media (max-width: $brkpoint-sm - 1) {
+        @include mq(small, max) {
             display: block;
             margin-top: -0.2px;
         }
@@ -21,8 +20,7 @@
         @include mq(small) {
             &:before {
                 content: '-';
-                margin-left: 6.15px;
-                margin-right: 9px;
+                margin: 0 9px 0 6.15px;
             }
         }
     }

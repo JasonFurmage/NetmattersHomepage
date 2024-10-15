@@ -37,7 +37,7 @@
 @mixin bg-colors($map) {
 	@each $theme, $color in $map {
 	  &--#{$theme} {
-		color: $color-white;
+		color: $color--white;
 		background-color: $color;
 		border-color: $color;
 	  }
@@ -54,28 +54,30 @@
 	}
 }
 
-@mixin mq($break) {
+@mixin mq($break, $type: min) {
+	$breakpoint: null;
+  
 	@if $break == "x-small" {
-	  @media (min-width: $brkpoint-xs) {
-		@content;
-	  }
+	  $breakpoint: $brkpoint--xs;
+	} @else if $break == "small" {
+	  $breakpoint: $brkpoint--sm;
+	} @else if $break == "medium" {
+	  $breakpoint: $brkpoint--md;
+	} @else if $break == "large" {
+	  $breakpoint: $brkpoint--lg;
+	} @else {
+	  @error "Whoops! No value could be retrieved for `#{$break}`.";
 	}
-	@else if $break == "small" {
-	  @media (min-width: $brkpoint-sm) {
-		@content;
-	  }
-	}
-	@else if $break == "medium" {
-	  @media (min-width: $brkpoint-md) {
-		@content;
-	  }
-	}
-	@else if $break == "large" {
-		@media (min-width: $brkpoint-lg) {
+  
+	@if $breakpoint {
+	  @if $type == min {
+		@media (min-width: #{$breakpoint}) {
 		  @content;
 		}
-	}
-	@else {
-		@error "Whoops! No value could be retrieved for `#{$break}`. "
+	  } @else if $type == max {
+		@media (max-width: #{$breakpoint - 1px}) {
+		  @content;
+		}
+	  }
 	}
 }
