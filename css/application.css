@@ -715,6 +715,12 @@ img {
   content: "\e926";
 }
 
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_affiliates.scss */
+.affiliates {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* line 39, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--primary {
   color: white;
