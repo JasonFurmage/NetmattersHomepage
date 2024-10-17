@@ -74,9 +74,8 @@
     }
 
     @include e(links-section) {
+        @extend %padding-horizontal;
         width: 100%;
-        padding-left: 15px;
-        padding-right: 15px;
         margin-bottom: 30px;
 
         @include mq(small) {

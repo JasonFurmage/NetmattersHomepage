@@ -5,8 +5,7 @@
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    @extend %padding-horizontal;
 
     @include mq(small) { width: $container-width--sm; }
     @include mq(medium) { width: $container-width--md; }
