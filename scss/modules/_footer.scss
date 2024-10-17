@@ -16,18 +16,18 @@
         margin-bottom: 26px;
 
         @include m(social) {
-            width: 100%;
             margin-top: 24px;
         }
     }
 
     @include e(company) {
-        @include flex($wrap: wrap, $just: space-between);
+        @include flex($wrap: wrap);
     }
     
     @include e(social) {
-        @include flex($wrap: wrap);
-        width: 100%;
+        @include mq(large) {
+            width: 400px;
+        }
     }
 
     @include e(logo-wrapper) {
@@ -49,8 +49,8 @@
 
     @include e(social-media-logo) {
         @include flex($just: center);
+        @include text($size: 26px);
         @include bg-hover-colors($colors--social-media);
-        font-size: 26px;
         background-color: $color--license-bg;
         padding: 16px 22px;
         margin-right: 7px;
@@ -62,5 +62,37 @@
         @include mq(large, max) {
             margin: 0px 10px 10px 0px;
         }
+    }
+
+    @include e(links) {
+        @include flex($wrap: wrap);
+        margin: 0px -15px;
+
+        @include mq(small) {
+            flex-grow: 1;
+        }
+    }
+
+    @include e(links-section) {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-bottom: 30px;
+
+        @include mq(small) {
+            width: 50%;
+        }
+
+        @include mq(medium) {
+            width: 25%;
+        }
+
+        @include mq(large) {
+            margin-bottom: 40px;
+        }
+    }
+
+    @include e(link) {
+        @include text($size: rem(13px), $height: rem(22px));
     }
 }
