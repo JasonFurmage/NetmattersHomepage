@@ -3,9 +3,8 @@
 // ==========================================================================
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    @extend %padding-horizontal;
+    padding: 0px 15px;
+    margin: 0px auto;
 
     @include mq(small) { width: $container-width--sm; }
     @include mq(medium) { width: $container-width--md; }
