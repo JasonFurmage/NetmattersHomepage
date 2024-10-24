@@ -738,6 +738,12 @@ img {
   margin-right: 50px;
 }
 
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.affiliates__item-img {
+  max-height: 70px;
+  filter: grayscale(1);
+}
+
 /* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--primary {
   color: white;

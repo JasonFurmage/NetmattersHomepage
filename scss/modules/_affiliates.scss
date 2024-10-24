@@ -18,4 +18,9 @@
         padding: 0 20px;
         margin-right: 50px;
     }
+
+    @include e(item-img) {
+        max-height: 70px;
+        filter: grayscale(1);
+    }
 }
