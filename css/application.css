@@ -399,13 +399,18 @@ a {
 }
 
 /* line 27, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+a:not(:has(*)):hover {
+  text-decoration: underline;
+}
+
+/* line 31, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 33, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 37, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 img {
   vertical-align: middle;
 }

@@ -24,6 +24,10 @@ a {
   text-decoration: none;
 }
 
+a:not(:has(*)):hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
   padding: 0;
