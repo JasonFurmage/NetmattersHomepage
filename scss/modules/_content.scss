@@ -1,11 +1,7 @@
 // ==========================================================================
-// Index
+// Content
 // ==========================================================================
 
-@import "affiliates";
-@import "buttons";
-@import "container";
-@import "content";
-@import "footer";
-@import "helper";
-@import "license";
+.content {
+    overflow: hidden;
+}

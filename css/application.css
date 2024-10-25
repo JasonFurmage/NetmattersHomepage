@@ -771,6 +771,11 @@ img {
   }
 }
 
+/* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_content.scss */
+.content {
+  overflow: hidden;
+}
+
 /* line 5, ../../../../XAMPP/xamppfiles/htdocs/websites/NetmattersHomepage/scss/modules/_footer.scss */
 .footer {
   color: white;
