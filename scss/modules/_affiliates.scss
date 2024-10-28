@@ -12,10 +12,39 @@
     @include e(item) {
         @include flex($algn: center);
         position: relative;
-        height: 70px;
-        max-height: 70px;
         padding: 0 20px;
         margin-right: 50px;
+
+        &:hover {
+            .affiliates__item-description {
+                display: block;
+            }
+        }
+    }
+
+    @include e(item-description) {
+        display: none;
+        position: absolute;
+        inset: auto -200px 100% -200px;
+    }
+
+    @include e(item-box) {
+        background-color: $color--box-bg;
+        color: $color--white;
+        max-width: 280px;
+        padding: 20px;
+        margin: 0 auto 50px;
+    }
+
+    @include e(item-title) {
+        @include text($size: rem(18px), $color: $color--white);
+        padding-bottom: 17px;
+        margin: 0;
+    }
+
+    @include e(item-text) {
+        @include text($size: rem(13px), $height: rem(22px), $align: center);
+        margin-bottom: 0;
     }
 
     @include e(item-img) {
