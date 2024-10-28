@@ -743,6 +743,11 @@ img {
   filter: grayscale(1);
 }
 
+/* line 26, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_affiliates.scss */
+.affiliates__item-img:hover {
+  filter: grayscale(0);
+}
+
 /* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--primary {
   color: white;

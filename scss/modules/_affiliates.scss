@@ -22,5 +22,9 @@
         max-height: 70px;
         max-width: 200px;
         filter: grayscale(1);
+
+        &:hover {
+            filter: grayscale(0);
+        }
     }
 }
