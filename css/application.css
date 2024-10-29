@@ -801,11 +801,79 @@ img {
   filter: grayscale(0);
 }
 
+/* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_buttons.scss */
+.btn {
+  font-size: 1.0625rem;
+  line-height: 35px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  padding: 5px 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 /* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--primary {
   color: white;
   background-color: #333645;
   border-color: #333645;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--bespoke {
+  color: white;
+  background-color: #67809f;
+  border-color: #67809f;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--it {
+  color: white;
+  background-color: #4183d7;
+  border-color: #4183d7;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--digital {
+  color: white;
+  background-color: #2ecc71;
+  border-color: #2ecc71;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--telecoms {
+  color: white;
+  background-color: #d64541;
+  border-color: #d64541;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--web {
+  color: white;
+  background-color: #926fb1;
+  border-color: #926fb1;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--cyber {
+  color: white;
+  background-color: #f62459;
+  border-color: #f62459;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--developer {
+  color: white;
+  background-color: #ce4125;
+  border-color: #ce4125;
+}
+
+/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--software {
+  color: white;
+  background-color: #f7b322;
+  border-color: #f7b322;
 }
 
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */

@@ -5,4 +5,12 @@
 .btn {
     @include bg-colors($colors--btns);
     @include bg-colors($colors--services);
+    
+    @include text($size: rem(17px), $height: 35px);
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 5px 15px;
+    text-transform: uppercase;
+    cursor: pointer;
 }
