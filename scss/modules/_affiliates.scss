@@ -47,6 +47,12 @@
         margin-bottom: 0;
     }
 
+    @include e(item-btn) {
+        @include flex();
+        @include text($size: 16px);
+        margin-top: 11px;
+    }
+
     @include e(item-img) {
         max-height: 70px;
         max-width: 200px;
