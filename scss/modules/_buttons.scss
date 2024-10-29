@@ -4,4 +4,5 @@
 
 .btn {
     @include bg-colors($colors--btns);
+    @include bg-colors($colors--services);
 }
