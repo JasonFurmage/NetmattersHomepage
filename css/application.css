@@ -876,6 +876,42 @@ img {
   border-color: #f7b322;
 }
 
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--it:hover {
+  background-color: #2a6ec6;
+  border-color: #2a6ec6;
+}
+
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--digital:hover {
+  background-color: #26ab5f;
+  border-color: #26ab5f;
+}
+
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--telecoms:hover {
+  background-color: #c42e2a;
+  border-color: #c42e2a;
+}
+
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--web:hover {
+  background-color: #7e57a0;
+  border-color: #7e57a0;
+}
+
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--cyber:hover {
+  background-color: #e80a42;
+  border-color: #e80a42;
+}
+
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.btn--software:hover {
+  background-color: #e8a008;
+  border-color: #e8a008;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_container.scss */
 .container {
   padding: 0px 15px;
