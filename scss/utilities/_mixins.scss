@@ -35,12 +35,25 @@
 }
 
 @mixin bg-colors($map) {
-	@each $theme, $color in $map {
+
+	$base-colors: map-get($map, base);
+    $hover-colors: map-get($map, hover);
+
+	@each $theme, $color in $base-colors {
 	  &--#{$theme} {
 		color: $color--white;
 		background-color: $color;
 		border-color: $color;
 	  }
+	}
+
+	@each $theme, $color in $hover-colors {
+		&--#{$theme} {
+		  &:hover {
+			background-color: $color;
+			border-color: $color;
+		  }
+		}
 	}
 }
 
