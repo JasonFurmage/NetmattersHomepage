@@ -813,63 +813,63 @@ img {
   cursor: pointer;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--primary {
   color: white;
   background-color: #333645;
   border-color: #333645;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--bespoke {
   color: white;
   background-color: #67809f;
   border-color: #67809f;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--it {
   color: white;
   background-color: #4183d7;
   border-color: #4183d7;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--digital {
   color: white;
   background-color: #2ecc71;
   border-color: #2ecc71;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--telecoms {
   color: white;
   background-color: #d64541;
   border-color: #d64541;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--web {
   color: white;
   background-color: #926fb1;
   border-color: #926fb1;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--cyber {
   color: white;
   background-color: #f62459;
   border-color: #f62459;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--developer {
   color: white;
   background-color: #ce4125;
   border-color: #ce4125;
 }
 
-/* line 39, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .btn--software {
   color: white;
   background-color: #f7b322;
@@ -980,24 +980,28 @@ img {
   margin-right: 7px;
 }
 
-/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social-media-logo--facebook:hover {
   background-color: #3b5998;
+  border-color: #3b5998;
 }
 
-/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social-media-logo--linkedin:hover {
   background-color: #0077b5;
+  border-color: #0077b5;
 }
 
-/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social-media-logo--twitter:hover {
   background-color: #00aced;
+  border-color: #00aced;
 }
 
-/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
 .footer__social-media-logo--instagram:hover {
   background-color: #d93175;
+  border-color: #d93175;
 }
 
 @media (max-width: 480px) {
