@@ -28,24 +28,33 @@ $color--license-bg      : #212330;
 $color--footer-bg       : #323544;
 $color--box-bg          : #333645;
 
-$colors--social-media: (
-    facebook    : #3b5998,
-    linkedin    : #0077b5,
-    twitter     : #00aced,
-    instagram   : #d93175,
+$colors--btns: (
+    base: (
+        primary     : #333645
+    ),
+    hover: ()
 );
 
-$colors--btns: (
-    primary     : #333645,
+$colors--social-media: (
+    base: (),
+    hover: (
+        facebook    : #3b5998,
+        linkedin    : #0077b5,
+        twitter     : #00aced,
+        instagram   : #d93175
+    )
 );
 
 $colors--services: (
-    bespoke     : #67809f,
-    it          : #4183d7,
-    digital     : #2ecc71,
-    telecoms    : #d64541,
-    web         : #926fb1,
-    cyber       : #f62459,
-    developer   : #ce4125,
-    software    : #f7b322
+    base: (
+        bespoke     : #67809f,
+        it          : #4183d7,
+        digital     : #2ecc71,
+        telecoms    : #d64541,
+        web         : #926fb1,
+        cyber       : #f62459,
+        developer   : #ce4125,
+        software    : #f7b322
+    ),
+    hover: ()
 );
