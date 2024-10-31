@@ -29,8 +29,8 @@
     }
 
     @include e(item-box) {
+        @include text($align: center, $color: $color--white);
         background-color: $color--box-bg;
-        color: $color--white;
         max-width: 280px;
         padding: 20px;
         margin: 0 auto 50px;
@@ -43,7 +43,7 @@
     }
 
     @include e(item-text) {
-        @include text($size: rem(13px), $height: rem(22px), $align: center);
+        @include text($size: rem(13px), $height: rem(22px));
         margin-bottom: 0;
     }
 
