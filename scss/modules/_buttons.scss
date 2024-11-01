@@ -13,4 +13,13 @@
     padding: 5px 15px;
     text-transform: uppercase;
     cursor: pointer;
+
+    @include e(icon) {
+        line-height: 35px;
+
+        @include m(right) {
+            margin-right: -4px;
+            margin-left: 12px;
+        }
+    }
 }
