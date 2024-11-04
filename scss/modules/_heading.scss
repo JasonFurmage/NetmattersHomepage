@@ -25,7 +25,6 @@
         @include m(large) {
             @include text($size: rem(43.2px), $weight: $font-weight--regular);
             margin: -13px 0 -10px 0;
-
     
             @include mq(large, max) {
                 margin-bottom: 15px;
