@@ -1,0 +1,20 @@
+// ==========================================================================
+// Heading
+// ==========================================================================
+
+.heading {
+
+    @include e(single) {
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include m(padded) {
+            margin-bottom: 35px;
+        }
+    }
+
+    @include e(link) {
+        font-weight: $font-weight--semi-bold;
+        color: $color--box-bg;
+    }
+}

@@ -388,40 +388,42 @@ body {
 /* line 16, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 h3 {
   font-weight: 400;
+  font-size: 1.625rem;
   line-height: 1.1;
+  margin: 0 0 15px;
 }
 
-/* line 21, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 23, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 h4 {
   font-weight: 400;
   line-height: 1.1;
   margin: 0 0 15px;
 }
 
-/* line 27, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 29, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 p {
   margin: 0 0 10px;
 }
 
-/* line 31, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 33, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 36, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 38, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 a:not(:has(*)):hover {
   text-decoration: underline;
 }
 
-/* line 40, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 42, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 46, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
+/* line 48, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/base/_base.scss */
 img {
   vertical-align: middle;
 }
@@ -1129,6 +1131,23 @@ img {
 .footer__link {
   font-size: 0.8125rem;
   line-height: 1.375rem;
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.heading__single {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* line 15, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.heading__single--padded {
+  margin-bottom: 35px;
+}
+
+/* line 7, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/utilities/_mixins.scss */
+.heading__link {
+  font-weight: 600;
+  color: #333645;
 }
 
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/scss/modules/_helper.scss */
