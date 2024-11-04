@@ -13,8 +13,23 @@
         }
     }
 
-    @include e(link) {
-        font-weight: $font-weight--semi-bold;
-        color: $color--box-bg;
+    @include e(double) {
+        @include flex($just: space-between);
+    }
+
+    @include e(link, title) {
+        @include text($weight: $font-weight--semi-bold, $color: $color--box-bg);
+    }
+
+    @include e(title) {
+        @include m(large) {
+            @include text($size: rem(43.2px), $weight: $font-weight--regular);
+            margin: -13px 0 -10px 0;
+
+    
+            @include mq(large, max) {
+                margin-bottom: 15px;
+            }
+        }
     }
 }
