@@ -11,3 +11,11 @@
         display: none!important;
     }
 }
+
+.hidden-xs {
+    display: none!important;
+
+    @include mq(small) {
+        display: block!important;
+    }
+}
