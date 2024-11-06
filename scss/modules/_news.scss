@@ -11,7 +11,7 @@
         @include flex($wrap: wrap);
         margin: -30px -15px 0px -15px;
 
-        @media (min-width: 768px) and (max-width: 1259px) {
+        @media (min-width: $brkpoint--sm) and (max-width: $brkpoint--lg) {
             .news__item-wrapper:last-child {
                 display: none;
             }
