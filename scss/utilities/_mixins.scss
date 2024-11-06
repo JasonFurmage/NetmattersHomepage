@@ -34,6 +34,16 @@
     color: $color;
 }
 
+@mixin text-colors($map) {
+	$base-colors: map-get($map, base);
+
+	@each $theme, $color in $base-colors {
+		&--#{$theme} {
+		  color: $color;
+		}
+	}
+}
+
 @mixin bg-colors($map) {
 
 	$base-colors: map-get($map, base);
