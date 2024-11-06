@@ -10,10 +10,19 @@
     @include e(articles) {
         @include flex($wrap: wrap);
         margin: -30px -15px 0px -15px;
+
+        @media (min-width: 768px) and (max-width: 1259px) {
+            .news__item-wrapper:last-child {
+                display: none;
+            }
+        }
     }
 
     @include e(item-wrapper) {
         padding: 0px 15px;
+
+        @include mq(small) { width: 50%; }
+        @include mq(large) { width: 33.33%; }
     }
 
     @include e(item) {
@@ -58,12 +67,20 @@
 
     @include e(item-heading) {
         @include text($size: rem(16px), $weight: $font-weight--semi-bold, $height: rem(24px));
-        @include text-colors($colors--services)
+        @include text-colors($colors--services);
+
+        @include mq(small) {
+            min-height: rem(48px);
+        }
     }
 
     @include e(item-paragraph) {
         @include text($size: rem(13px), $height: rem(22px));
         margin-bottom: 25px;
+
+        @include mq(small) {
+            min-height: 66px;
+        }
     }
 
     @include e(item-user) {
