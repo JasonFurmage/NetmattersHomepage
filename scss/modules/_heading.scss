@@ -31,4 +31,8 @@
             }
         }
     }
+
+    @include m(padded) {
+        padding-top: 50px;
+    }
 }
