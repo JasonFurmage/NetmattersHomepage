@@ -4,7 +4,7 @@
 
 .news {
     @include e(section) {
-        margin: 15px 0 50px;
+        padding: 15px 0 50px;
     }
 
     @include e(articles) {
