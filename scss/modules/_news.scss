@@ -1,0 +1,94 @@
+// ==========================================================================
+// News
+// ==========================================================================
+
+.news {
+    @include e(section) {
+        margin: 15px 0 50px;
+    }
+
+    @include e(articles) {
+        @include flex($wrap: wrap);
+        margin: -30px -15px 0px -15px;
+    }
+
+    @include e(item-wrapper) {
+        padding: 0px 15px;
+    }
+
+    @include e(item) {
+        position: relative;
+        top: 0;
+        transition: .5s ease;
+        margin-top: 30px;
+
+        &:hover {
+            top: -10px;
+            transition: .5s ease;
+        }
+    }
+
+    @include e(item-link) {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+    }
+
+    @include e(item-category) {
+        @include text($size: rem(12px), $weight: $font-weight--semi-bold, $height: rem(23.008px));
+        @include bg-colors($colors--services);
+        position: absolute;
+        inset: 10px 0 auto auto;
+        padding: 0 10px;
+        text-transform: uppercase;
+        z-index: 1;
+    }
+
+    @include e(item-img) {
+        width: 100%;
+    }
+
+    @include e(item-preview) {
+        border: 1px solid $color--grey;
+        border-top: 0;
+        border-radius: 0 0 3px 3px;
+        padding: 30px;
+        box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+    }
+
+    @include e(item-heading) {
+        @include text($size: rem(16px), $weight: $font-weight--semi-bold, $height: rem(24px));
+        @include text-colors($colors--services)
+    }
+
+    @include e(item-paragraph) {
+        @include text($size: rem(13px), $height: rem(22px));
+        margin-bottom: 25px;
+    }
+
+    @include e(item-user) {
+        @include text($size: rem(14px));
+        border-top: 1px solid $color--grey;
+        padding-top: 30px;
+        margin-top: 30px;
+    }
+
+    @include e(item-avatar, item-details) {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    @include e(item-avatar) {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    @include e(item-details) {
+        @include text($height: rem(22px));
+        padding-left: 20px;
+    }
+
+    @include e(item-author) {
+        @include text($weight: $font-weight--semi-bold, $color: $color--box-bg);
+    }
+}
