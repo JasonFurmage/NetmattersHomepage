@@ -1,0 +1,14 @@
+// ==========================================================================
+// breakpoints.scss
+// ==========================================================================
+
+// Break points for media queries.
+$breakpoint--xs    : 480px;
+$breakpoint--sm    : 768px;
+$breakpoint--md    : 992px;
+$breakpoint--lg    : 1260px;
+
+// Container widths for each break point.
+$container-width--sm    : 750px;
+$container-width--md    : 970px;
+$container-width--lg    : 1200px;

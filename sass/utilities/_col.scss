@@ -1,0 +1,12 @@
+// ==========================================================================
+// col.scss
+// ==========================================================================
+
+// Add padding for gutter and resize according to screen size.
+.col {
+    @extend %padding-horizontal;
+    @include m(xs-12) { width: 100% }
+    @include m(sm-6)  { @include mq_min($breakpoint--sm) { width: 50% } }
+    @include m(md-3)  { @include mq_min($breakpoint--md) { width: 25% } }
+    @include m(lg-4)  { @include mq_min($breakpoint--lg) { width: 33.33% } }
+}

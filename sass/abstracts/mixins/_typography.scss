@@ -1,0 +1,14 @@
+// ==========================================================================
+// typography.scss
+// ==========================================================================
+
+// Common font properties.
+@mixin font($size: null, $wght: null, $hght: null, $spce: null, $algn: null, $trfm: null, $color: null) {
+    font-size: $size;
+    font-weight: $wght;
+	line-height: $hght;
+    letter-spacing: $spce;
+    text-align: $algn;
+    text-transform: $trfm;
+    color: $color;
+}

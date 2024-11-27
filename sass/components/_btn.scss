@@ -1,0 +1,27 @@
+// ==========================================================================
+// btn.scss
+// ==========================================================================
+
+.btn {
+    @include font($size: rem(17.008px), $hght: 35px, $trfm: uppercase);
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    padding: 5px 15px;
+    cursor: pointer;
+
+    // Add bg and bg hover colors.
+    @include bg-color-modifiers($color-map--services);
+    @include bg-color-hover-modifiers($color-map--services-dark);
+
+    // Align icons and btn text.
+    @include e(icon) {
+        line-height: 35px;
+
+        // Add space between icon and btn text.
+        @include m(right) {
+            margin-right: -4px;
+            margin-left: 12px;
+        }
+    }
+}

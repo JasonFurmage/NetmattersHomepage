@@ -1,0 +1,13 @@
+// ==========================================================================
+// flexbox.scss
+// ==========================================================================
+
+// Common flexbox proprties.
+@mixin flex($disp: null, $wrap: null, $dir: null, $grow: null, $algn: null, $just: null) {
+	display: $disp;
+    flex-wrap: $wrap;
+	flex-direction: $dir;
+    flex-grow: $grow;
+    align-items: $algn;
+	justify-content: $just;
+}

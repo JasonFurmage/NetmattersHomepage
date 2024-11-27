@@ -1,0 +1,21 @@
+// ==========================================================================
+// bem.scss
+// ==========================================================================
+
+// Add element class.
+@mixin e($elements...) {
+	@each $element in $elements {
+		&__#{$element} {
+		@content;
+		}
+	}
+}
+
+// Add modifier class.
+@mixin m($modifiers...) {
+	@each $modifier in $modifiers {
+		&--#{$modifier} {
+		@content;
+		}
+	}
+}

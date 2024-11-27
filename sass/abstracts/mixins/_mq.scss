@@ -1,0 +1,24 @@
+// ==========================================================================
+// mq.scss
+// ==========================================================================
+
+// For min-width media queries.
+@mixin mq_min($breakpoint) {
+    @media (min-width: $breakpoint) {
+      @content;
+    }
+}
+  
+// For max-width media queries.
+@mixin mq_max($breakpoint) {
+    @media (max-width: $breakpoint) {
+        @content;
+    }
+}
+  
+// For ranged media queries.
+@mixin mq_range($min, $max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}

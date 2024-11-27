@@ -1,0 +1,8 @@
+// ==========================================================================
+// typography.scss
+// ==========================================================================
+
+// Convert pixels to rems.
+@function rem($target, $context: $font-size) {
+	@return ($target / $context) * 1rem;
+}

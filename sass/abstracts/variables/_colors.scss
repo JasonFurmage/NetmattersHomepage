@@ -1,0 +1,41 @@
+// ==========================================================================
+// colors.scss
+// ==========================================================================
+
+// Individual Colors
+$color--black           : #000;
+$color--white           : #fff;
+$color--navy            : #323544;
+$color--navy-dark       : #212330;
+$color--navy-darker     : #333645;
+$color--grey            : #ccc;
+$color--grey-dark       : #666;
+
+// Color Maps
+$color-map--social-media: (
+    facebook    : #3b5998,
+    linkedin    : #0077b5,
+    x           : #00aced,
+    instagram   : #d93175
+);
+
+$color-map--services: (
+    bespoke     : #67809f,
+    it          : #4183d7,
+    digital     : #2ecc71,
+    telecoms    : #d64541,
+    web         : #926fb1,
+    cyber       : #f62459,
+    developer   : #ce4125,
+    software    : #f7b322,
+    business    : #db8c0d
+);
+
+$color-map--services-dark: (
+    it          : #2a6ec6,
+    digital     : #26ab5f,
+    telecoms    : #c42e2a,
+    web         : #7e57a0,
+    cyber       : #e80a42,
+    software    : #e8a008
+);

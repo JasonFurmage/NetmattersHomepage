@@ -1,0 +1,83 @@
+// ==========================================================================
+// affiliates.scss
+// ==========================================================================
+
+.affiliates {
+
+    // Put affiliates on same line.
+    @include e(carousel) {
+        @include flex($disp: flex, $dir: row);
+    }
+
+    @include e(item) {
+        @include flex($disp: flex, $algn: center); // Keep affiliates aligned.
+        position: relative; // Required for description wrapper.
+
+        // Add space between affiliates.
+        padding: 0 20px;
+        margin-right: 50px;
+
+        // Make description wrapper visible on hover.
+        &:hover .affiliates__description-wrapper {
+            display: block;
+        }
+    }
+
+    @include e(description-wrapper) {
+        display: none;
+        position: absolute;
+        inset: auto -200px 100% -200px; // Position description wrapper above logo.
+    }
+
+    @include e(description) {
+        @include font($color: $color--white, $algn: center);
+        background-color: $color--navy-darker;
+        max-width: 280px;
+        padding: 20px;
+        margin: 0 auto 50px; // Position description wrapper above logo.
+    }
+
+    @include e(heading) {
+        @include font($size: rem(18px));
+        padding-bottom: 17px;
+        margin: 0;
+    }
+
+    @include e(paragraph) {
+        @include font($size: rem(13px), $hght: rem(22px));
+        margin-bottom: 0;
+    }
+
+    @include e(btn) {
+        @include flex($disp: flex);
+        @include font($size: 16px);
+        margin-top: 11px;
+    }
+
+    // Position arrow below description.
+    @include e(arrow) {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        margin-left: -36px;
+
+        // Create arrow that points to affiliate logo.
+        &::after {
+            content: "";
+            display: inline-block;
+            border-style: solid;
+            border-width: 35px 36px 0;
+            border-color: $color--navy-darker transparent transparent;
+            margin: auto;
+        }
+    }
+
+    @include e(logo) {
+        max-height: 70px;
+        max-width: 200px;
+
+        // Give logo color on hover.
+        filter: grayscale(1);
+        &:hover { filter: grayscale(0); }
+    }
+}

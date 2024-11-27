@@ -1,0 +1,50 @@
+// ==========================================================================
+// heading.scss
+// ==========================================================================
+
+.heading {
+
+    // Add space above heading.
+    @include m(padded) {
+        padding-top: 50px;
+    }
+
+    // Put single heading in the middle of container.
+    @include e(single) {
+        @include font($algn: center);
+        margin-bottom: 20px;
+
+        // Add space below heading.
+        @include m(padded) {
+            margin-bottom: 35px;
+        }
+    }
+
+    // Put double heading at opposite sides of container.
+    @include e(double) {
+        @include flex($disp: flex, $just: space-between);
+    }
+
+    @include e(title) {
+        color: $color--navy-darker; // Set heading color.
+
+        // Styles for small headings.
+        @include m(sm) { 
+            @include font($size: rem(26px)); 
+        }
+
+        // Styles for medium headings.
+        @include m(md) { 
+            margin: 0 0 28px; 
+        }
+
+        // Styles for large headings.
+        @include m(lg) {
+            @include font($size: rem(43.2px), $wght: $font-weight--regular);
+            margin: -13px 0 -10px 0;
+
+            // Add extra space below heading on screens up to md.
+            @include mq_max($breakpoint--lg - 1) { margin-bottom: 15px;}
+        }
+    }
+}

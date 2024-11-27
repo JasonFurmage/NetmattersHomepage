@@ -1,0 +1,15 @@
+// ==========================================================================
+// container.scss
+// ==========================================================================
+
+.container {
+    // Center contents and add padding to keep away from edges.
+    @extend %padding-horizontal;
+    margin-right: auto;
+    margin-left: auto;
+
+    // Resize container width according to screen size.
+    @include mq_min($breakpoint--sm) { width: $container-width--sm; }
+    @include mq_min($breakpoint--md) { width: $container-width--md; }
+    @include mq_min($breakpoint--lg) { width: $container-width--lg; }
+}
