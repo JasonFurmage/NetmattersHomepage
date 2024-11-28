@@ -31,7 +31,7 @@
 
     @include e(description) {
         @include font($color: $color--white, $algn: center);
-        background-color: $color--navy-darker;
+        background-color: $color--navy-dark;
         max-width: 280px;
         padding: 20px;
         margin: 0 auto 50px; // Position description wrapper above logo.
@@ -67,7 +67,7 @@
             display: inline-block;
             border-style: solid;
             border-width: 35px 36px 0;
-            border-color: $color--navy-darker transparent transparent;
+            border-color: $color--navy-dark transparent transparent;
             margin: auto;
         }
     }

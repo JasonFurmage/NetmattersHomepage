@@ -26,7 +26,7 @@
     }
 
     @include e(title) {
-        color: $color--navy-darker; // Set heading color.
+        color: $color--navy-dark; // Set heading color.
 
         // Styles for small headings.
         @include m(sm) { 
