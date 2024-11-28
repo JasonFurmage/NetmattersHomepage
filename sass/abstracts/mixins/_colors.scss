@@ -2,35 +2,41 @@
 // colors.scss
 // ==========================================================================
 
-// Add color modifier classes from color map.
-@mixin color-modifiers($color-map) {
-    @each $theme, $color in $color-map {
-        &--#{$theme} {
-          color: $color;
-        }
-      }
-}
-
-// Add background color modifier classes from color map.
-@mixin bg-color-modifiers($color-map) {
-	@each $theme, $color in $color-map {
-	  &--#{$theme} {
-		color: $color--white;
-		background-color: $color;
-		border-color: $color;
-	  }
+// Add color modifier classes from color maps.
+@mixin color-modifiers($color-maps...) {
+	@each $color-map in $color-maps {
+	  	@each $theme, $color in $color-map {
+			&--#{$theme} {
+				color: $color;
+			}
+	  	}
 	}
 }
 
-// Add background color hover modifier classes from color map.
-@mixin bg-color-hover-modifiers($color-map) {
-    @each $theme, $color in $color-map {
-		&--#{$theme} {
-		  &:hover {
-            color: $color--white;
-			background-color: $color;
-			border-color: $color;
-		  }
+// Add background color modifier classes from color maps.
+@mixin bg-color-modifiers($color-maps...) {
+	@each $color-map in $color-maps {
+		@each $theme, $color in $color-map {
+			&--#{$theme} {
+				color: $color--white;
+				background-color: $color;
+				border-color: $color;
+			}
+		}
+	}
+}
+
+// Add background color hover modifier classes from color maps.
+@mixin bg-color-hover-modifiers($color-maps...) {
+	@each $color-map in $color-maps {
+		@each $theme, $color in $color-map {
+			&--#{$theme} {
+				&:hover {
+					color: $color--white;
+					background-color: $color;
+					border-color: $color;
+				}
+			}
 		}
 	}
 }
