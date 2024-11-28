@@ -3,5 +3,53 @@
 // ==========================================================================
 
 .brand {
-    
+    @include font($color: $color--white);
+    background-color: $color--navy-dark;
+
+    // Add space around heading.
+    @include e(heading) {
+        margin-top: -6px;
+        margin-bottom: 40px;
+    }
+
+    @include e(paragraph) {
+        @include font($hght: rem(30px));
+        margin-bottom: 25px; // Add space between paragraphs.
+    }
+
+    @include e(star) {
+        @include font($size: 43px, $color: orange);
+        margin-right: -2px;
+        margin-bottom: 32px; // Add space below stars.
+    }
+
+    @include e(quote) {
+        @include font($size: rem(20.8px), $style: italic);
+    }
+
+    @include e(quote-author) {
+        @include font($size: rem(17.6px));
+        @include m(highlighted) { color: #a3a8ac; } // Highlight author name.
+    }
+
+    @include e(btn) {
+        @include flex($disp: inline-flex, $algn: center); // Align icon with btn text.
+        @include font($size: 20px);
+        border-radius: 6px;
+        padding: 10px 30px;
+
+        // Styles for review buttons.
+        @include m(review) {
+            border: none;
+            margin-top: 25px;
+
+            // Decrease space above btns on screens up to md.
+            @include mq_max($breakpoint--lg - 1) { margin-top: 20px; }
+        }
+
+        // Modifers for adding space around buttons.
+        @include m(mr-8) { margin-right: 8px; }
+        @include m(mb-17) { @include mq_max($breakpoint--lg - 1) { margin-bottom: 17px; } }
+        @include m(mb-50) { @include mq_max($breakpoint--md - 1) { margin-bottom: 50px; } }
+    }
 }
