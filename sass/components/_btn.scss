@@ -11,8 +11,12 @@
     cursor: pointer;
 
     // Add bg and bg hover colors.
+    @include bg-color-modifiers($color-map--btns);
     @include bg-color-modifiers($color-map--services);
+    @include bg-color-modifiers($color-map--reviews);
+    @include bg-color-hover-modifiers($color-map--btns-dark);
     @include bg-color-hover-modifiers($color-map--services-dark);
+    @include bg-color-hover-modifiers($color-map--reviews-dark);
 
     // Align icons and btn text.
     @include e(icon) {
