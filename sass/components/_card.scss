@@ -1,0 +1,12 @@
+// ==========================================================================
+// card.scss
+// ==========================================================================
+
+// Styles for card with box shadow.
+.card {
+    display: block;
+    border: 1px solid $color--grey;
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
+}
