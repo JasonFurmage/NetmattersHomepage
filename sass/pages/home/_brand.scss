@@ -29,7 +29,11 @@
 
     @include e(quote-author) {
         @include font($size: rem(17.6px));
-        @include m(highlighted) { color: #a3a8ac; } // Highlight author name.
+    }
+
+    // Highlight author name.
+    @include e(quote-title) {
+        color: #a3a8ac;
     }
 
     @include e(btn) {
