@@ -3,9 +3,10 @@
 // ==========================================================================
 
 .heading {
+    width: 100%;
 
     // Add space above heading.
-    @include m(padded) {
+    @include m(pt-50) {
         padding-top: 50px;
     }
 
@@ -15,8 +16,13 @@
         margin-bottom: 20px;
 
         // Add space below heading.
-        @include m(padded) {
+        @include m(mb-35) {
             margin-bottom: 35px;
+        }
+
+        // Add space above and decrease space below heading.
+        @include m(mtmb-30-70) {
+            margin: 30px auto -70px;
         }
     }
 
