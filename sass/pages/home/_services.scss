@@ -1,0 +1,60 @@
+// ==========================================================================
+// services.scss
+// ==========================================================================
+
+.services {
+
+    // Add space above services section.
+    @include e(list) {
+        margin-top: 20px;
+    }
+
+    // Keep all service items the same size.
+    @include e(item-wrapper) {
+        @include flex($disp: flex);
+        width: 100%;
+    }
+
+    @include e(item) {
+        @include font($algn: center, $color: $color--navy-dark);
+        @include bg-color-hover-modifiers($color-map--services);
+        @include move-on-hover(top, 0, -10px, .5s, ease); // Move item up on hover.
+        position: relative;
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 30px; // Add space between items.
+
+        // Invert item colors on hover.
+        &:hover {
+            .services__icon-wrapper, .btn { 
+                @include color-modifiers($color-map--services);
+                background-color: $color--white;
+                border-color: $color--white;  
+            }
+        }
+    }
+
+    @include e(icon-wrapper) {
+        @include bg-color-modifiers($color-map--services);
+        display: block; // Set to block so we can adjust size.
+        height: 65px;
+        width: 65px;
+        border-radius: 50%; // Make wrapper a circle.
+        margin: 0 auto 17px;
+    }
+
+    @include e(icon) {
+        @include font($size: rem(32px), $hght: 62px);
+    }
+
+    @include e(heading) {
+        @include font($size: rem(20.8px));
+        padding-bottom: 10px;
+        margin: 0 0 11px;
+    }
+
+    @include e(paragraph) {
+        @include font($size: rem(13px), $hght: rem(22px));
+        margin-bottom: 13px;
+    }
+}
