@@ -13,7 +13,7 @@
         margin-top: -30px;
 
         // Hide last article of screens between sm and lg.
-        @include mq_range($breakpoint--sm, $breakpoint--lg) {
+        @include mq_range($breakpoint--sm, $breakpoint--lg - 1) {
             .news__item-wrapper:last-child {
                 display: none;
             }
@@ -22,16 +22,9 @@
 
     @include e(item) {
         @include font($size: rem(13px));
+        @include move-on-hover(top, 0, -10px, .5s, ease); // Move article up on hover.
         position: relative;
-        top: 0;
         margin-top: 30px; // Add space between articles.
-        transition: .5s ease;
-
-        // Move article up on hover.
-        &:hover {
-            top: -10px;
-            transition: .5s ease;
-        }
     }
 
     // Make entire article a link.
@@ -59,11 +52,8 @@
 
     // Styles for article preview.
     @include e(preview) {
-        border: 1px solid $color--grey;
         border-top: 0;
         border-radius: 0 0 3px 3px;
-        padding: 30px;
-        box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     }
 
     @include e(heading) {
@@ -78,7 +68,7 @@
         margin-bottom: 25px;
     }
 
-    @include e(author) {
+    @include e(user) {
         @include font(rem(14px));
         @include flex($disp: flex, $algn: center);
         border-top: 1px solid $color--grey; // Add separator between author and paragraph.
@@ -95,8 +85,10 @@
     @include e(date) {
         @include font($hght: 22px);
         padding-left: 20px; // Add space between avatar and date.
+    }
 
-        // Change text color of first line.
-        &::first-line { color: $color--navy-dark; }
+    // Change color of 'posted by' text.
+    @include e(author) {
+        color: $color--navy-dark;
     }
 }
