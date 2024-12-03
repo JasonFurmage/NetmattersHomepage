@@ -1,11 +1,8 @@
 // ==========================================================================
-// index.scss
+// sizing.scss
 // ==========================================================================
 
-@import 'animation';
-@import 'bem';
-@import 'colors';
-@import 'flexbox';
-@import 'mq';
-@import 'sizing';
-@import 'typography';
+@mixin inset-fill($pos) {
+    position: #{$pos};
+    inset: 0;
+}
