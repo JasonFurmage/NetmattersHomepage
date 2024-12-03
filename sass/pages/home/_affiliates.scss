@@ -3,7 +3,6 @@
 // ==========================================================================
 
 .affiliates {
-
     // Put affiliates on same line.
     @include e(carousel) {
         @include flex($disp: flex, $dir: row);
