@@ -40,7 +40,7 @@
 
     // Zoom keep aspect ratio.
     @include e(image) {
-        @extend %fill-size;
+        @extend %size-fill;
         object-fit: cover;
     }
 
