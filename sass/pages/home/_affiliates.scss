@@ -55,20 +55,11 @@
 
     // Position arrow below description.
     @include e(arrow) {
+        @extend %aff-arrow; // Create arrow that points to affiliate logo.
         position: absolute;
         bottom: 10px;
         left: 50%;
         margin-left: -36px;
-
-        // Create arrow that points to affiliate logo.
-        &::after {
-            content: "";
-            display: inline-block;
-            border-style: solid;
-            border-width: 35px 36px 0;
-            border-color: $color--navy-dark transparent transparent;
-            margin: auto;
-        }
     }
 
     @include e(logo) {
