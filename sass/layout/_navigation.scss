@@ -1,0 +1,101 @@
+// ==========================================================================
+// navigation.scss
+// ==========================================================================
+
+.navigation {
+    position: relative;
+    background-color: $color--navy-dark;
+
+    // Show menu items in a row.
+    @include e(menu) {
+        @include flex($disp: flex);
+    }
+
+    // Center items and make them fill available space.
+    @include e(item-wrapper) {
+        @include font($algn: center);
+        @include flex($flex: 1 1 0%);
+        @include bg-color-hover-modifiers($color-map--services);
+
+        &:hover {
+            .navigation__item {
+                @extend %nav-arrow; // Show arrow below items.
+                
+                // Add modifier classes to match arrow color with item color.
+                @each $theme, $color in $color-map--services {
+                    &--#{$theme}::before { border-color: $color transparent transparent; }
+                }
+            }
+
+            .navigation__item-icon { color: $color--white; } // Make icons white on hover.
+            .navigation__banner { display: block; } // Show banner on hover.
+        }
+    }
+
+    // Set font size and color.
+    @include e(item) {
+        @include font($size: rem(18px), $hght: 1, $trfm: uppercase, $color: $color--white);
+        position: relative;
+        padding: 19px 0 18px;
+    }
+
+    // Set icon size and color.
+    @include e(item-icon) {
+        @include font($size: rem(23.008px));
+        @include color-modifiers($color-map--services);
+        padding-bottom: 10px;
+    }
+
+    // Set small heading size.
+    @include e(item-heading) {
+        @include font($size: rem(10px));
+        padding-bottom: 1px;
+    }
+
+    // Position banner below navigation menu and fill width of page.
+    @include e(banner) {
+        @include bg-color-modifiers($color-map--services-dark);
+        display: none;
+        position: absolute;
+        left: 0;
+        min-width: 100%;
+        z-index: 10; // Make banner appear in front of other contents.
+    }
+
+    // Make links wrap to new line.
+    @include e(sub-menu) {
+        @include flex($disp: flex, $wrap: wrap, $algn: center);
+        @include font($algn: left);
+        padding: 0;
+        margin-top: -15px;
+    }
+
+    // Make heading fill entire line.
+    @include e(heading) {
+        @include font($size: rem(32px), $wght: $font-weight--medium);
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    // Show three links per line.
+    @include e(link-wrapper) {
+        width: 33%;
+        margin-top: 15px;
+    }
+
+    // Center link icon and text and add gap.
+    @include e(link) {
+        @include font($size: rem(19.2px), $hght: rem(21.008px));
+        @include flex($disp: flex, $algn: center, $gap: 10px);
+        padding: rem(10px) rem(15.008px) rem(10px) 0;
+
+        // Underline link text on hover.
+        &:hover {
+            .navigation__link-text { text-decoration: underline; }
+        }
+    }
+
+    @include e(link-icon) { min-width: 25px; }
+    @include e(item, item-icon, item-heading) { display: block; }
+}
