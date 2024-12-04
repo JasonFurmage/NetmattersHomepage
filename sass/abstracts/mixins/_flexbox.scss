@@ -3,11 +3,12 @@
 // ==========================================================================
 
 // Common flexbox proprties.
-@mixin flex($disp: null, $wrap: null, $dir: null, $grow: null, $algn: null, $just: null) {
+@mixin flex($disp: null, $flex: null, $wrap: null, $dir: null, $algn: null, $just: null, $gap: null) {
 	display: $disp;
+    flex: $flex;
     flex-wrap: $wrap;
 	flex-direction: $dir;
-    flex-grow: $grow;
     align-items: $algn;
 	justify-content: $just;
+    gap: $gap;
 }
