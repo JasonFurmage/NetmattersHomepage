@@ -671,56 +671,56 @@ template {
 
 /* line 10, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 body {
-  font-family: "Poppins", sans-serif;
   font-size: 1rem;
   line-height: 1.42857;
   letter-spacing: 0.4px;
   color: #666;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
 }
 
-/* line 19, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 16, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 h1 {
   font-size: 2.25rem;
   line-height: 1.1;
 }
 
-/* line 23, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 20, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 h2, h3, h4 {
   font-weight: 400;
   line-height: 1.1;
   margin: 0 0 15px;
 }
 
-/* line 28, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 25, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 p {
   margin: 0 0 10px;
 }
 
-/* line 32, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 29, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 36, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 33, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 a {
   color: inherit;
   text-decoration: none;
 }
 
-/* line 41, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 38, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 a:hover:has(strong), a:hover:not(:has(*)) {
   text-decoration: underline;
 }
 
-/* line 47, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 44, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-/* line 53, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
+/* line 50, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/base/_base.scss */
 img {
   vertical-align: middle;
 }

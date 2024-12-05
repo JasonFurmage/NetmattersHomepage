@@ -8,11 +8,8 @@
 }
 
 body {
+    @include font($size: rem(16px), $hght: $line-height, $spce: $letter-spacing, $color: $color--grey-dark);
     font-family: $font-family;
-    font-size: rem(16px);
-    line-height: $line-height;
-    letter-spacing: $letter-spacing;
-    color: $color--grey-dark;
     background-color: $color--white;
 }
 
