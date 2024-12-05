@@ -12,13 +12,8 @@
         border-radius: 0;
         border-top-right-radius: 10px;
         padding: 0 10px;
-        background: #75788a;
         z-index: 99;
 
-        &:hover {
-            background-color: #999aa2;
-            border-color: #999aa2;
-            box-shadow: 0 3px 35px rgba(0,0,0,.1);
-        }
+        &:hover { box-shadow: 0 3px 35px rgba(0,0,0,.1); }
     }
 }

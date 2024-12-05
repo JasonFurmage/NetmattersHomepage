@@ -746,6 +746,13 @@ img {
 }
 
 /* line 20, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_colors.scss */
+.btn--default-inverse {
+  color: #fff;
+  background-color: #75788a;
+  border-color: #75788a;
+}
+
+/* line 20, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_colors.scss */
 .btn--default-alt {
   color: #fff;
   background-color: #999aa2;
@@ -848,6 +855,13 @@ img {
   color: #fff;
   background-color: #84858f;
   border-color: #84858f;
+}
+
+/* line 34, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_colors.scss */
+.btn--default-inverse:hover {
+  color: #fff;
+  background-color: #999aa2;
+  border-color: #999aa2;
 }
 
 /* line 34, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_colors.scss */
@@ -1029,14 +1043,11 @@ img {
   border-radius: 0;
   border-top-right-radius: 10px;
   padding: 0 10px;
-  background: #75788a;
   z-index: 99;
 }
 
-/* line 18, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_cookies.scss */
+/* line 17, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_cookies.scss */
 .cookies__btn:hover {
-  background-color: #999aa2;
-  border-color: #999aa2;
   box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
 }
 
