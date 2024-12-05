@@ -119,6 +119,10 @@
         border-radius: 0 3px 3px 0;
         padding: 5px 20px 3px;
         background-color: #999aa2;
+        cursor: pointer;
+
+        // Change background color on hover.
+        &:hover { background-color: #7e808a;}
 
         // Add space to the left on md screens.
         @include mq_range($breakpoint--md, $breakpoint--lg - 1) { margin-left: 20px; }

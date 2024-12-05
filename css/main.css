@@ -1006,6 +1006,23 @@ img {
   overflow: hidden;
 }
 
+/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.cookies__btn {
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  border-width: 1px 1px 0 0;
+  border-radius: 0;
+  border-top-right-radius: 10px;
+  padding: 0 10px;
+  background: #75788a;
+  z-index: 99;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_footer.scss */
 .footer {
   color: #fff;
@@ -1324,6 +1341,12 @@ img {
   border-radius: 0 3px 3px 0;
   padding: 5px 20px 3px;
   background-color: #999aa2;
+  cursor: pointer;
+}
+
+/* line 125, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+.header__search-btn:hover {
+  background-color: #7e808a;
 }
 
 @media (min-width: 992px) and (max-width: 1259px) {
