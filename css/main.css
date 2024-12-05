@@ -1023,6 +1023,13 @@ img {
   z-index: 99;
 }
 
+/* line 18, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_cookies.scss */
+.cookies__btn:hover {
+  background-color: #999aa2;
+  border-color: #999aa2;
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_footer.scss */
 .footer {
   color: #fff;
