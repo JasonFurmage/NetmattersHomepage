@@ -21,3 +21,9 @@
         display: none;
     }
 }
+
+.hidden-md-down {
+    @include mq_max($breakpoint--lg - 1) {
+        display: none;
+    }
+}
