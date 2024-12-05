@@ -3,8 +3,8 @@
 // ==========================================================================
 
 .btn {
+    @include flex($disp: inline-flex, $algn: center);
     @include font($size: rem(17.008px), $hght: 35px, $trfm: uppercase);
-    display: inline-block;
     border: 1px solid transparent;
     border-radius: 3px;
     padding: 5px 15px;
@@ -16,7 +16,6 @@
 
     // Align icons and btn text.
     @include e(icon) {
-        line-height: 35px;
 
         // Add space between icon and btn text.
         @include m(right) {

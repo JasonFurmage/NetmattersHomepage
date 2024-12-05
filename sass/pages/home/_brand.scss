@@ -37,7 +37,6 @@
     }
 
     @include e(btn) {
-        @include flex($disp: inline-flex, $algn: center); // Align icon with btn text.
         @include font($size: 20px);
         border-radius: 6px;
         padding: 10px 30px;

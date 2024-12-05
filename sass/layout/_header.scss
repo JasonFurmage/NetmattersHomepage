@@ -45,7 +45,7 @@
 
     // Align btn and icon.
     @include e(btn) {
-        @include flex($disp: inline-flex);
+        @include flex($algn: stretch);
         @include font($size: rem(18px), $hght: 46px);
     }
 
@@ -113,11 +113,11 @@
 
     // Style search btn and position icon in center.
     @include e(search-btn) {
-        @include font($size: 24.8px);
+        @include font($size: 24px);
         width: 63px;
         border: none;
         border-radius: 0 3px 3px 0;
-        padding: 5px 20px 3px;
+        padding: 0px 21px 3px;
         cursor: pointer;
 
         // Add space to the left on md screens.
