@@ -1,0 +1,126 @@
+// ==========================================================================
+// header.scss
+// ==========================================================================
+
+.header {
+    padding: 20px 0;
+
+    // Keep header contents aligned on xs screens.
+    @include e(contents) {
+        @include mq_max($breakpoint--sm - 1) { 
+            @include flex($algn: center);
+            margin: 0!important; 
+        }
+    }
+
+    // Override col padding on xs screens.
+    @include e(logo-wrapper, phone-wrapper, actions-wrapper) { 
+        @include mq_max($breakpoint--sm - 1) { padding: 0!important; }
+    }
+
+    // Make header items the same size and add gap between them.
+    @include e(btn, hamburger, search) {
+        height: 56px; 
+        margin-left: 20px; 
+    }
+
+    // Make logo take up available space on xs screens.
+    @include e(logo-wrapper) { 
+        @include mq_max($breakpoint--sm - 1) { flex: 1; }
+    }
+
+    @include e(logo) { max-width: 100%; } // Keep logo within bounds.
+
+    // Set icon size and add space to the left.
+    @include e(phone) {
+        @include font($size: 32px, $color: $color--navy-dark);
+        margin-left: 15px;
+    }
+
+    // Force actions to right side and add vertical padding.
+    @include e(actions) {
+        @include flex($disp: flex, $just: flex-end);
+        padding: 7px 0;
+    }
+
+    // Align btn and icon.
+    @include e(btn) {
+        @include flex($disp: inline-flex);
+        @include font($size: rem(18px), $hght: 46px);
+    }
+
+    // Set icon size and position.
+    @include e(btn-icon) {
+        @include font($size: rem(23.008px), $hght: 45px);
+        margin-right: 5px;
+
+    }
+
+    // Stack and center hamburger lines.
+    @include e(hamburger) {
+        @include flex($disp: flex, $dir: column, $just: center);
+        border: 0;
+    }
+
+    // Set hamburger size and spacing.
+    @include e(hamburger-line) {
+        height: 4px;
+        width: 33px;
+        background-color: $color--white;
+        margin-top: 6px;
+
+        &:first-child { margin-top: 0; } // Don't apply margin top to first line.
+    }
+
+    @include e(form) {
+        @include flex($disp: flex); // Remove space between search btn and form.
+
+        // Add space above search bar on xs screens. 
+        @include mq_max($breakpoint--sm - 1) {
+            position: relative;
+            margin-top: 11px;
+        }
+    }
+
+    // Increase width on lg screens and hide on md screens.
+    @include e(search) {
+        width: 174px;
+
+        @include mq_min($breakpoint--lg) { width: 240px; }
+        @include mq_range($breakpoint--md, $breakpoint--lg - 1) { display: none; }
+    }
+
+    // Style search-xs bar.
+    @include e(search-xs) {
+        background-color: rgba(0,0,0,.1);
+        border: 2px solid rgba(0,0,0,.1);
+
+        // Override active and focus styles.
+        &:active, &:focus {
+            border: 2px solid rgba(0,0,0,.1);
+            box-shadow: 0 0 3px $color--white;
+        }
+    }
+
+    // Position search icon inside search-xs bar.
+    @include e(search-icon) {
+        @include font($size: 21px, $hght: 46px, $color: $color--navy-dark);
+        position: absolute;
+        right: 5.5px;
+        border: none;
+        background: none;
+    }
+
+    // Style search btn and position icon in center.
+    @include e(search-btn) {
+        @include font($size: 24.8px, $color: $color--white);
+        width: 63px;
+        border: none;
+        border-radius: 0 3px 3px 0;
+        padding: 5px 20px 3px;
+        background-color: #999aa2;
+
+        // Add space to the left on md screens.
+        @include mq_range($breakpoint--md, $breakpoint--lg - 1) { margin-left: 20px; }
+    }
+}
