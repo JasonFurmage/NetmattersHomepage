@@ -1,5 +1,5 @@
 // ==========================================================================
-// mixins/animation.scss
+// mixins/helpers.scss
 // ==========================================================================
 
 @mixin move-on-hover($prop, $start, $end, $dur, $ease) {
@@ -9,4 +9,9 @@
     &:hover {
       #{$prop}: #{$end};
     }
+}
+
+@mixin inset-fill($pos) {
+    position: #{$pos};
+    inset: 0;
 }

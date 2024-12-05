@@ -2,10 +2,9 @@
 // mixins/index.scss
 // ==========================================================================
 
-@import 'animation';
 @import 'bem';
 @import 'colors';
 @import 'flexbox';
+@import 'helpers';
 @import 'mq';
-@import 'sizing';
 @import 'typography';
