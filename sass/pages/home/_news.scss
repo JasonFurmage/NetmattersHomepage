@@ -22,7 +22,7 @@
 
     @include e(item) {
         @include font($size: rem(13px));
-        @include move-on-hover(top, 0, -10px, .5s, ease); // Move article up on hover.
+        @include animate-on-hover(top, 0, -10px, .5s, ease); // Move article up on hover.
         position: relative;
         margin-top: 30px; // Add space between articles.
     }

@@ -2,7 +2,8 @@
 // mixins/helpers.scss
 // ==========================================================================
 
-@mixin move-on-hover($prop, $start, $end, $dur, $ease) {
+// Animate property change on hover.
+@mixin animate-on-hover($prop, $start, $end, $dur, $ease) {
     #{$prop}: #{$start};
     transition: #{$dur} #{$ease};
   
@@ -11,6 +12,7 @@
     }
 }
 
+// Set position and fill inset.
 @mixin inset-fill($pos) {
     position: #{$pos};
     inset: 0;

@@ -17,7 +17,7 @@
     @include e(item) {
         @include font($algn: center, $color: $color--navy-dark);
         @include bg-color-hover-modifiers($color-map--services);
-        @include move-on-hover(top, 0, -10px, 0.5s, ease); // Move item up on hover.
+        @include animate-on-hover(top, 0, -10px, 0.5s, ease); // Move item up on hover.
         position: relative;
         width: 100%;
         border-radius: 15px;
