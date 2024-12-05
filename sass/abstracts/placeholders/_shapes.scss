@@ -1,0 +1,28 @@
+// ==========================================================================
+// placeholders/shapes.scss
+// ==========================================================================
+
+// Arrow for affiliate section.
+%aff-arrow {
+    &::after {
+        content: "";
+        display: inline-block;
+        border-style: solid;
+        border-width: 35px 36px 0;
+        border-color: $color--navy-dark transparent transparent;
+        margin: auto;
+    }
+}
+
+// Arrow for navigation section.
+%nav-arrow {
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -35px;
+        transform: translateX(-50%);
+        z-index: 90;
+        border-style: solid;
+        border-width: 35px 83.5px 0;
+    }
+}
