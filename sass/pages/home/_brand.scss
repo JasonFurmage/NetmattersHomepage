@@ -33,7 +33,7 @@
 
     // Highlight author name.
     @include e(quote-title) {
-        color: #a3a8ac;
+        color: $color--brand-quote-title;
     }
 
     @include e(btn) {

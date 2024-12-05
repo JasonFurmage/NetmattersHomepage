@@ -1,7 +1,7 @@
 // ==========================================================================
 // variables/colors.scss
 // ==========================================================================
-
+//
 // Multi-use Colors
 $color--black           : #000;
 $color--white           : #fff;
@@ -12,11 +12,10 @@ $color--grey            : #ccc;
 $color--grey-dark       : #666;
 
 // Single-use Colors
-$color--brand-quote-title       : #a3a8ac;
-$color--header-search-btn       : #999aa2;
-$color--textfield-border        : #e5e5e5;
-$color--textfield-border-focus  : #5bc0de;
-$color--textfield-font-color    : #555;
+$color--brand-quote-title           : #a3a8ac;
+$color--textfield-border            : #e5e5e5;
+$color--textfield-border-focus      : #5bc0de;
+$color--textfield-font-color        : #555;
 
 // Color Maps
 $color-map--social-media: (
@@ -62,12 +61,14 @@ $color-map--reviews-dark: (
 
 $color-map--btns: (
     default             : #999aa2,
+    default-alt         : #999aa2,
     primary             : #333645,
     primary-inverse     : #272936
 );
 
 $color-map--btns-dark: (
     default             : #84858f,
+    default-alt         : #7e808a,
     primary             : #22242e,
     primary-inverse     : #121318,
 );

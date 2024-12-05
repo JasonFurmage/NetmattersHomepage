@@ -3,10 +3,10 @@
 // ==========================================================================
 
 .textfield {
-    @include font($size: 14px, $color: #555);
+    @include font($size: 14px, $color: $color--textfield-font-color);
     height: 47px;
     width: 100%;
-    border: 1px solid #e5e5e5;
+    border: 1px solid $color--textfield-border; 
     border-radius: 2px;
     border-color: $color--grey;
     padding: 5px 15px;
@@ -14,7 +14,7 @@
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 
     &:focus {
-        border-color: #5bc0de;
+        border-color: $color--textfield-border-focus;
         outline: 0;
         box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(91,192,222,.6);
     }
