@@ -7,7 +7,7 @@
     @include font($size: 14px, $color: $color--textfield-font-color);
     height: 47px;
     width: 100%;
-    border: 1px solid $color--textfield-border; 
+    border: 1px solid $color--grey-light; 
     border-radius: 2px;
     border-color: $color--grey;
     padding: 5px 15px;
