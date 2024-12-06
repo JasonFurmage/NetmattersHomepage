@@ -9,6 +9,13 @@
     }
 }
 
+// Hide element on sm- screens.
+.hidden-sm-down {
+    @include mq_max($breakpoint--md - 1) {
+        display: none;
+    }
+}
+
 // Hide element on sm+ screens.
 .hidden-sm-up {
     @include mq_min($breakpoint--sm) {
@@ -16,12 +23,7 @@
     }
 }
 
-.hidden-sm-down {
-    @include mq_max($breakpoint--md - 1) {
-        display: none;
-    }
-}
-
+// Hide element on md- screens.
 .hidden-md-down {
     @include mq_max($breakpoint--lg - 1) {
         display: none;

@@ -4,13 +4,11 @@
 
 .services {
     // Add space above services section.
-    @include e(list) {
-        margin-top: 20px;
-    }
+    @include e(list) { margin-top: 20px; }
 
     // Keep all service items the same size.
     @include e(item-wrapper) {
-        @include flex($disp: flex);
+        display: flex;
         width: 100%;
     }
 
@@ -33,12 +31,13 @@
         }
     }
 
+    // Make icon wrapper a circle and adjust size.
     @include e(icon-wrapper) {
         @include bg-color-modifiers($color-map--services);
-        display: block; // Set to block so we can adjust size.
+        display: block;
         height: 65px;
         width: 65px;
-        border-radius: 50%; // Make wrapper a circle.
+        border-radius: 50%;
         margin: 0 auto 17px;
     }
 

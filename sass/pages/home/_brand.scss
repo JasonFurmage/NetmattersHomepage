@@ -3,41 +3,33 @@
 // ==========================================================================
 
 .brand {
-    @include font($color: $color--white);
+    color: $color--white;
     background-color: $color--navy-dark;
 
     // Add space around heading.
-    @include e(heading) {
-        margin-top: -6px;
-        margin-bottom: 40px;
-    }
+    @include e(heading) { margin: -6px 0 40px; }
 
+    // Add space between paragraphs.
     @include e(paragraph) {
-        @include font($hght: rem(30px));
-        margin-bottom: 25px; // Add space between paragraphs.
+        line-height: rem(30px);
+        margin-bottom: 25px;
     }
 
+    // Add space below stars.
     @include e(star) {
-        @include font($size: 43px, $color: orange);
-        margin-right: -2px;
-        margin-bottom: 32px; // Add space below stars.
+        @include font($size: 43px, $color: $color--brand-star);
+        margin: 0 -2px 32px 0;
     }
 
     @include e(quote) {
         @include font($size: rem(20.8px), $style: italic);
     }
 
-    @include e(quote-author) {
-        @include font($size: rem(17.6px));
-    }
-
-    // Highlight author name.
-    @include e(quote-title) {
-        color: $color--brand-quote-title;
-    }
+    @include e(quote-author) { font-size: rem(17.6px); }
+    @include e(quote-title) { color: $color--brand-quote-title; } // Highlight author name.
 
     @include e(btn) {
-        @include font($size: 20px);
+        font-size: 20px;
         border-radius: 6px;
         padding: 10px 30px;
 
@@ -46,12 +38,12 @@
             border: none;
             margin-top: 25px;
 
-            // Decrease space above btns on screens up to md.
+            // Decrease space above btns on md- screens.
             @include mq_max($breakpoint--lg - 1) { margin-top: 20px; }
         }
 
-        // Modifers for adding space around buttons.
-        @include m(mr-8) { margin-right: 8px; }
+        // Modifiers for adding space around buttons.
+        @include m(mr-8)  { margin-right: 8px; }
         @include m(mb-17) { @include mq_max($breakpoint--lg - 1) { margin-bottom: 17px; } }
         @include m(mb-50) { @include mq_max($breakpoint--md - 1) { margin-bottom: 50px; } }
     }

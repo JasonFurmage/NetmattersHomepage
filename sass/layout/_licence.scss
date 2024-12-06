@@ -7,8 +7,8 @@
     background: $color--navy-darker;
 
     @include e(info) {
-        @include flex($disp: flex);
         @include font($size: rem(13px), $color: $color--white);
+        display: flex;
         padding: 5px 0 10px;
 
         // Show licence text in column on xs screens.

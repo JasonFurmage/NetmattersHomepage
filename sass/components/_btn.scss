@@ -2,8 +2,9 @@
 // components/btn.scss
 // ==========================================================================
 
+// Default button styles.
 .btn {
-    @include flex($disp: inline-flex, $algn: center);
+    @include flex($disp: inline-flex, $algn: center); // Align text and icon.
     @include font($size: rem(17.008px), $hght: 35px, $trfm: uppercase);
     border: 1px solid transparent;
     border-radius: 3px;
@@ -14,13 +15,8 @@
     @include bg-color-modifiers($color-map--btns, $color-map--services, $color-map--reviews);
     @include bg-color-hover-modifiers($color-map--btns-dark, $color-map--services-dark, $color-map--reviews-dark);
 
-    // Align icons and btn text.
+    // Add space between icon and btn text.
     @include e(icon) {
-
-        // Add space between icon and btn text.
-        @include m(right) {
-            margin-right: -4px;
-            margin-left: 12px;
-        }
+        @include m(right) { margin: 0 -4px 0 12px; }
     }
 }

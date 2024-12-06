@@ -3,23 +3,22 @@
 // ==========================================================================
 
 .banner {
+    // Stack and center banner contents vertically.
     @include e(item) {
-        @include font($color: $color--white);
-        @include flex($disp: flex, $dir: column, $just: center); // Stack banner contents.
+        @include flex($disp: flex, $dir: column, $just: center);
         position: relative;
+        color: $color--white;
         min-height: 550px;
         background-color: $color--black; // For dimming effect.
 
-        // Center banner contents on screens sizes up to md.
-        @include mq_max($breakpoint--md) {
-            @include font($algn: center);
-        }
+        // Center banner contents horizontally on md- screens.
+        @include mq_max($breakpoint--md) { text-align: center; }
     }
 
     @include e(overlay) {
         @include inset-fill(absolute); // Stretch to fill container.
 
-        // Dim banner image on screen sizes up to md.
+        // Dim banner image on md- screens.
         @include mq_max($breakpoint--md - 1) { opacity: 0.5; }
 
         // Dim left side of banner image on md+ screens.
@@ -38,15 +37,16 @@
         @extend %size-fill;
     }
 
-    // Zoom keep aspect ratio.
+    // Keep image aspect ratio.
     @include e(image) {
         @extend %size-fill;
         object-fit: cover;
     }
 
+    // Keep on top of other elements.
     @include e(content-wrapper) {
         padding: rem(60px) 0;
-        z-index: 4; // Keep contents ontop of overlay.
+        z-index: 4;
     }
 
     @include e(heading) {
@@ -72,7 +72,6 @@
     @include e(btn) {
         @include font($size: rem(20px), $hght: 50px);
         padding: 5px 20px;
-        margin-top: rem(31.008px);
-        margin-bottom: rem(18px);
+        margin: rem(31.008px) 0 rem(18px); 
     }
 }

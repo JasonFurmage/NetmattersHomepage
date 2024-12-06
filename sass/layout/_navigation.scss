@@ -8,14 +8,14 @@
 
     // Show menu items in a row.
     @include e(menu) {
-        @include flex($disp: flex);
+        display: flex;
     }
 
     // Center items and make them fill available space.
     @include e(item-wrapper) {
-        @include font($algn: center);
-        @include flex($flex: 1 1 0%);
         @include bg-color-hover-modifiers($color-map--services);
+        flex: 1 1 0%;
+        text-align: center;
 
         &:hover {
             .navigation__item {
@@ -41,31 +41,32 @@
 
     // Set icon size and color.
     @include e(item-icon) {
-        @include font($size: rem(23.008px));
         @include color-modifiers($color-map--services);
+        font-size: rem(23.008px);
         padding-bottom: 10px;
     }
 
     // Set small heading size.
     @include e(item-heading) {
-        @include font($size: rem(10px));
+        font-size: rem(10px);
         padding-bottom: 1px;
     }
 
-    // Position banner below navigation menu and fill width of page.
     @include e(banner) {
         @include bg-color-modifiers($color-map--services-dark);
         display: none;
+        z-index: 10; // Keep on top of other elements.
+
+        // Position banner below navigation menu.
         position: absolute;
         left: 0;
         min-width: 100%;
-        z-index: 10; // Make banner appear in front of other contents.
     }
 
     // Make links wrap to new line.
     @include e(sub-menu) {
         @include flex($disp: flex, $wrap: wrap, $algn: center);
-        @include font($algn: left);
+        text-align: left;
         padding: 0;
         margin-top: -15px;
     }
@@ -74,8 +75,7 @@
     @include e(heading) {
         @include font($size: rem(32px), $wght: $font-weight--medium);
         width: 100%;
-        margin-top: 15px;
-        margin-bottom: 10px;
+        margin: 15px 0 10px;
     }
 
     // Show three links per line.
@@ -84,7 +84,7 @@
         margin-top: 15px;
     }
 
-    // Center link icon and text and add gap.
+    // Center link icon and text.
     @include e(link) {
         @include font($size: rem(19.2px), $hght: rem(21.008px));
         @include flex($disp: flex, $algn: center, $gap: 10px);

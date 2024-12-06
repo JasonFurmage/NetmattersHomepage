@@ -6,24 +6,16 @@
     width: 100%;
 
     // Add space above heading.
-    @include m(pt-50) {
-        padding-top: 50px;
-    }
+    @include m(pt-50) { padding-top: 50px; }
 
     // Put single heading in the middle of container.
     @include e(single) {
         @include font($algn: center);
         margin-bottom: 20px;
 
-        // Add space below heading.
-        @include m(mb-35) {
-            margin-bottom: 35px;
-        }
-
-        // Add space above and decrease space below heading.
-        @include m(mtmb-30-70) {
-            margin: 30px auto -70px;
-        }
+        // Modifiers for adding space around buttons.
+        @include m(mb-35) { margin-bottom: 35px; }
+        @include m(mtmb-30-70) { margin: 30px auto -70px; }
     }
 
     // Put double heading at opposite sides of container.
@@ -34,15 +26,8 @@
     @include e(title) {
         color: $color--navy-dark; // Set heading color.
 
-        // Styles for small headings.
-        @include m(sm) { 
-            @include font($size: rem(26px)); 
-        }
-
-        // Styles for medium headings.
-        @include m(md) { 
-            margin: 0 0 28px; 
-        }
+        @include m(sm) { font-size: rem(26px); } // Styles for sm headings.
+        @include m(md) { margin: 0 0 28px; } // Styles for md headings.
 
         // Styles for large headings.
         @include m(lg) {

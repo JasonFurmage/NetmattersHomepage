@@ -31,6 +31,7 @@
         width: 100%;
     }
 
+    // Add space below heading.
     @include e(heading) {
         @include font($trfm: uppercase);
         margin-bottom: 26px;
@@ -51,14 +52,11 @@
         @include flex($disp: flex, $just: center); // Center icons.
         @include font($size: 26px, $hght: 26px); // Set icon size.
         @include bg-color-hover-modifiers($color-map--social-media); // Add hover colors.
+        margin: 0 10px 10px 0; // Add space around icons.
 
         // Make icons look like buttons.
         background-color: $color--navy-darker;
         padding: 16px 22px 16px;
-
-        // Add space around icons.
-        margin-right: 10px;
-        margin-bottom: 10px;
 
         // Show two icons per line on xs screens.
         @include mq_max($breakpoint--xs) { width: 35%; }

@@ -2,18 +2,20 @@
 // layout/cookies.scss
 // ==========================================================================
 
-// Style cookies button and pin to bottom left corner.
 .cookies {
     @include e(btn) {
-        @include font($size: rem(12.8px), $wght:$font-weight--semi-bold, $hght: 22px, $trfm: capitalize, $color: $color--white);
-        position: fixed;
-        bottom: 0;
+        @include font($size: rem(12.8px), $wght:$font-weight--semi-bold, $hght: 22px, $trfm: capitalize);
         border-width: 1px 1px 0 0;
         border-radius: 0;
         border-top-right-radius: 10px;
         padding: 0 10px;
-        z-index: 99;
+        z-index: 99; // Keep on top of other elements.
 
-        &:hover { box-shadow: 0 3px 35px rgba(0,0,0,.1); }
+        // Fix cookies btn to bottom left corner.
+        position: fixed;
+        bottom: 0;
+
+        // Add box shadow on hover.
+        &:hover { box-shadow: 0 3px 35px $rgba--grey-dark; }
     }
 }

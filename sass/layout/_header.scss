@@ -8,8 +8,8 @@
     // Keep header contents aligned on xs screens.
     @include e(contents) {
         @include mq_max($breakpoint--sm - 1) { 
-            @include flex($algn: center);
-            margin: 0!important; 
+            align-items: center;
+            margin: 0!important; // Override row margin.
         }
     }
 
@@ -18,7 +18,7 @@
         @include mq_max($breakpoint--sm - 1) { padding: 0!important; }
     }
 
-    // Make header items the same size and add gap between them.
+    // Make header elements the same size and add gap between them.
     @include e(btn, hamburger, search) {
         height: 56px; 
         margin-left: 20px; 
@@ -37,16 +37,16 @@
         margin-left: 15px;
     }
 
-    // Force actions to right side and add vertical padding.
+    // Force action elements to right side and add vertical padding.
     @include e(actions) {
         @include flex($disp: flex, $just: flex-end);
         padding: 7px 0;
     }
 
-    // Align btn and icon.
+    // Align btn text and icon.
     @include e(btn) {
-        @include flex($algn: stretch);
         @include font($size: rem(18px), $hght: 46px);
+        align-items: stretch;
     }
 
     // Set icon size and position.
@@ -62,18 +62,18 @@
         border: 0;
     }
 
-    // Set hamburger size and spacing.
+    // Set hamburger line size and spacing.
     @include e(hamburger-line) {
         height: 4px;
         width: 33px;
         background-color: $color--white;
         margin-top: 6px;
 
-        &:first-child { margin-top: 0; } // Don't apply margin top to first line.
+        &:first-child { margin-top: 0; } // Remove margin top from first line.
     }
 
     @include e(form) {
-        @include flex($disp: flex); // Remove space between search btn and form.
+        @include flex($disp: flex); // Removes space between search btn and form.
 
         // Add space above search bar on xs screens. 
         @include mq_max($breakpoint--sm - 1) {
@@ -82,7 +82,7 @@
         }
     }
 
-    // Increase width on lg screens and hide on md screens.
+    // Increase search bar width on lg screens and hide on md screens.
     @include e(search) {
         width: 174px;
 
@@ -92,28 +92,29 @@
 
     // Style search-xs bar.
     @include e(search-xs) {
-        background-color: rgba(0,0,0,.1);
-        border: 2px solid rgba(0,0,0,.1);
+        background-color: $rgba--grey-dark;
+        border: 2px solid $rgba--grey-dark;
 
-        // Override active and focus styles.
+        // Override default active and focus styles.
         &:active, &:focus {
-            border: 2px solid rgba(0,0,0,.1);
+            border: 2px solid $rgba--grey-dark;
             box-shadow: 0 0 3px $color--white;
         }
     }
 
-    // Position search icon inside search-xs bar.
     @include e(search-icon) {
         @include font($size: 21px, $hght: 46px, $color: $color--navy-dark);
-        position: absolute;
-        right: 5.5px;
         border: none;
         background: none;
+
+        // Position search icon inside search-xs bar.
+        position: absolute;
+        right: 5.5px;
     }
 
-    // Style search btn and position icon in center.
+    // Style search btn and center icon.
     @include e(search-btn) {
-        @include font($size: 24px);
+        font-size: 24px;
         width: 63px;
         border: none;
         border-radius: 0 3px 3px 0;

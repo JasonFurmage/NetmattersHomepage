@@ -3,52 +3,44 @@
 // ==========================================================================
 
 .news {
-    // Add verical padding for spacing.
-    @include e(articles-wrapper) {
-        padding-top: 15px;
-        padding-bottom: 50px;
-    }
+    // Add vertical padding for spacing.
+    @include e(articles-wrapper) { padding: 15px 0 50px; }
 
     @include e(articles) {
         margin-top: -30px;
 
-        // Hide last article of screens between sm and lg.
+        // Hide last article on screens between sm and lg.
         @include mq_range($breakpoint--sm, $breakpoint--lg - 1) {
-            .news__item-wrapper:last-child {
-                display: none;
-            }
+            .news__item-wrapper:last-child { display: none; }
         }
     }
 
     @include e(item) {
-        @include font($size: rem(13px));
-        @include animate-on-hover(top, 0, -10px, .5s, ease); // Move article up on hover.
+        @include animate-on-hover(top, 0, -10px, 0.5s, ease); // Move article up on hover.
         position: relative;
+        font-size: rem(13px);
         margin-top: 30px; // Add space between articles.
     }
 
-    // Make entire article a link.
+    // Make article a link.
     @include e(link) {
-        position: absolute;
-        inset: 0;
+        @include inset-fill(absolute);
         z-index: 1;
     }
 
-    // Add category label to top right corner.
     @include e(category) {
         @include font($size: rem(12px), $hght: rem(23.008px), $trfm: uppercase, $color: $color--white);
         @include bg-color-modifiers($color-map--services);
+        padding: 0 10px;
+        z-index: 1;
+
+        // Position category label in top right corner.
         position: absolute;
         top: 10px;
         right: 0;
-        padding: 0 10px;
-        z-index: 1;
     }
 
-    // Keep image in bounds.
-    @include e(image) {
-        width: 100%;
-    }
+    @include e(image) { width: 100%; } // Keep image in bounds.
 
     // Styles for article preview.
     @include e(preview) {
@@ -59,19 +51,23 @@
     @include e(heading) {
         @include font($size: rem(16px), $hght: rem(24px));
         @include color-modifiers($color-map--services);
-        @include mq_min($breakpoint--sm) { min-height: rem(48px); } // For keeping article heights consistent.
+
+        // Keep article heights equal.
+        @include mq_min($breakpoint--sm) { min-height: rem(48px); }
     }
 
     @include e(paragraph) {
-        @include font($hght: rem(22px));
-        @include mq_min($breakpoint--sm) { min-height: 66px; } // For keeping article heights consistent.
+        line-height: rem(22px);
         margin-bottom: 25px;
+
+        // Keep article heights equal.
+        @include mq_min($breakpoint--sm) { min-height: 66px; }
     }
 
     @include e(user) {
-        @include font(rem(14px));
         @include flex($disp: flex, $algn: center);
-        border-top: 1px solid $color--grey; // Add separator between author and paragraph.
+        font-size: rem(14px);
+        border-top: 1px solid $color--grey; // Add separator between user and paragraph sections.
         padding-top: 30px;
         margin-top: 30px;
     }
@@ -83,12 +79,9 @@
     }
 
     @include e(date) {
-        @include font($hght: 22px);
+        line-height: 22px;
         padding-left: 20px; // Add space between avatar and date.
     }
 
-    // Change color of 'posted by' text.
-    @include e(author) {
-        color: $color--navy-dark;
-    }
+    @include e(author) { color: $color--navy-dark; } // Change color of 'posted by' text.
 }
