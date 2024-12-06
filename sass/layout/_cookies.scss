@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .cookies {
-    @include e(btn) {
+    @include e(consent-btn) {
         @include font($size: rem(12.8px), $wght:$font-weight--semi-bold, $hght: 22px, $trfm: capitalize);
         border-width: 1px 1px 0 0;
         border-radius: 0;
@@ -17,5 +17,55 @@
 
         // Add box shadow on hover.
         &:hover { box-shadow: 0 3px 35px $rgba--grey-dark; }
+    }
+
+    // Cover page contents with overlay.
+    @include e(overlay) {
+        @include inset-fill(fixed);
+        display: flex;
+        background-color: $rgba--black-light;
+        padding: 30px;
+        overflow: auto; // Allow scrolling on popup.
+        z-index: 100;
+    }
+
+    // Center popup wrapper and fix width on sm+ screens.
+    @include e(popup-wrapper) {
+        margin: auto;
+        @include mq_min($breakpoint--sm) { width: 600px; }
+    }
+
+    @include e(popup) {
+        background-color: $color--white;
+        background-clip: padding-box;
+        border: 1px solid $rgba--grey-darker;
+        border-radius: 5px;
+    }
+
+    @include e(heading) {
+        @include font($size: rem(26px), $hght: 1.42857143);
+        border-bottom: 1px solid $color--grey-light; // Add seperator line.
+        padding: 15px 20px;
+        margin: 0;
+    }
+
+    @include e(paragraph) {
+        line-height: rem(30px);
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+
+    @include e(btns-wrapper) {
+        border-top: 1px solid $color--grey-light; // Add seperator line.
+        padding: 19px 20px 20px;
+    }
+
+    @include e(btn) {
+        width: 100%;
+
+        // Modifier class for adding space below btn on xs screens.
+        @include m(mb-30) {
+            @include mq_max($breakpoint--sm - 1) { margin-bottom: 30px; }
+        }
     }
 }
