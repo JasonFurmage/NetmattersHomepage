@@ -1,0 +1,16 @@
+// ==========================================================================
+// mixins/grid.scss
+// ==========================================================================
+
+// Add widths for breakpoints in grid system.
+@mixin col-width($breakpoint: null, $fraction: 1) {
+    $percentage: ($fraction / 12) * 100%;
+
+    @if $breakpoint {
+      @include mq_min($breakpoint) {
+        width: $percentage;
+      }
+    } @else {
+      width: $percentage;
+    }
+}
