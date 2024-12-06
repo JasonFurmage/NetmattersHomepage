@@ -7,10 +7,7 @@
     @include e(list) { margin-top: 20px; }
 
     // Keep all service items the same size.
-    @include e(item-wrapper) {
-        display: flex;
-        width: 100%;
-    }
+    @include e(item-wrapper) { display: flex; }
 
     @include e(item) {
         @include font($algn: center, $color: $color--navy-dark);
