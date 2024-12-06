@@ -2,6 +2,11 @@
 // utilities/hidden.scss
 // ==========================================================================
 
+// Hide element.
+.hidden {
+    display: none;
+}
+
 // Hide element on xs screens.
 .hidden-xs {
     @include mq_max($breakpoint--sm - 1) {
