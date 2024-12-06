@@ -4,7 +4,7 @@
 
 // Default button styles.
 .btn {
-    @include flex($disp: inline-flex, $algn: center); // Align text and icon.
+    @include flex($disp: inline-flex, $algn: center, $just: center); // Center and align contents.
     @include font($size: rem(17.008px), $hght: 35px, $trfm: uppercase);
     border: 1px solid transparent;
     border-radius: 3px;
