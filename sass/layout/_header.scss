@@ -37,6 +37,11 @@
         margin-left: 15px;
     }
 
+    // Override col width on xs screens.
+    @include e(actions-wrapper) {
+        @include mq_max($breakpoint--sm - 1) { width: auto!important; }
+    }
+
     // Force action elements to right side and add vertical padding.
     @include e(actions) {
         @include flex($disp: flex, $just: flex-end);
