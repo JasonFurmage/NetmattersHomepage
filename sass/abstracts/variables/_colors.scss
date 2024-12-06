@@ -12,10 +12,17 @@ $color--grey            : #ccc;
 $color--grey-dark       : #666;
 
 // Single-use Colors
+$color--brand-star                  : orange;
 $color--brand-quote-title           : #a3a8ac;
 $color--textfield-border            : #e5e5e5;
 $color--textfield-border-focus      : #5bc0de;
 $color--textfield-font-color        : #555;
+
+//RGBA Colors
+$rgba--grey          : rgba(0,0,0,0.075);
+$rgba--grey-dark     : rgba(0,0,0,0.1);
+$rgba--cyan          : rgba(91,192,222,0.6);
+
 
 // Color Maps
 $color-map--social-media: (
