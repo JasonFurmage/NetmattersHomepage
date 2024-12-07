@@ -3,17 +3,13 @@
 // ==========================================================================
 
 .affiliates {
-    // Put affiliates on same line and center.
-    @include e(carousel) {
-        @include flex($disp: flex, $dir: row, $algn: center);
-    }
+    @include e(carousel) { display: flex; } // Put affiliates on same line.
 
     @include e(item) {
+        @include flex($disp: flex, $algn: center);
         position: relative;
-
-        // Add space between affiliates.
-        padding: 0 20px;
-        margin-right: 50px;
+        height: 70px;
+        padding: 0 20px; // Add space between affiliates.
 
         // Show description wrapper on hover.
         &:hover { 
