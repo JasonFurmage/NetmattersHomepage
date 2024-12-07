@@ -6,7 +6,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;1,600&display=swap");
-/* line 11, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 11, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 html {
   line-height: 1.15;
   /* 1 */
@@ -19,7 +19,7 @@ html {
 /**
  * Remove the margin in all browsers.
  */
-/* line 23, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 23, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 body {
   margin: 0;
 }
@@ -27,7 +27,7 @@ body {
 /**
  * Render the `main` element consistently in IE.
  */
-/* line 31, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 31, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 main {
   display: block;
 }
@@ -36,7 +36,7 @@ main {
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-/* line 40, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 40, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -48,7 +48,7 @@ h1 {
  * 1. Add the correct box sizing in Firefox.
  * 2. Show the overflow in Edge and IE.
  */
-/* line 53, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 53, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 hr {
   box-sizing: content-box;
   /* 1 */
@@ -62,7 +62,7 @@ hr {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 64, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 64, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 pre {
   font-family: monospace, monospace;
   /* 1 */
@@ -75,7 +75,7 @@ pre {
 /**
  * Remove the gray background on active links in IE 10.
  */
-/* line 76, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 76, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 a {
   background-color: transparent;
 }
@@ -84,7 +84,7 @@ a {
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
-/* line 85, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 85, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 abbr[title] {
   border-bottom: none;
   /* 1 */
@@ -97,7 +97,7 @@ abbr[title] {
 /**
  * Add the correct font weight in Chrome, Edge, and Safari.
  */
-/* line 95, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 95, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 b,
 strong {
   font-weight: bolder;
@@ -107,7 +107,7 @@ strong {
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
  */
-/* line 105, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 105, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 code,
 kbd,
 samp {
@@ -120,7 +120,7 @@ samp {
 /**
  * Add the correct font size in all browsers.
  */
-/* line 116, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 116, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 small {
   font-size: 80%;
 }
@@ -129,7 +129,7 @@ small {
  * Prevent `sub` and `sup` elements from affecting the line height in
  * all browsers.
  */
-/* line 125, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 125, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 sub,
 sup {
   font-size: 75%;
@@ -138,12 +138,12 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 133, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 133, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 sub {
   bottom: -0.25em;
 }
 
-/* line 137, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 137, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 sup {
   top: -0.5em;
 }
@@ -153,7 +153,7 @@ sup {
 /**
  * Remove the border on images inside links in IE 10.
  */
-/* line 148, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 148, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 img {
   border-style: none;
 }
@@ -164,7 +164,7 @@ img {
  * 1. Change the font styles in all browsers.
  * 2. Remove the margin in Firefox and Safari.
  */
-/* line 160, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 160, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button,
 input,
 optgroup,
@@ -184,7 +184,7 @@ textarea {
  * Show the overflow in IE.
  * 1. Show the overflow in Edge.
  */
-/* line 176, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 176, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button,
 input {
   /* 1 */
@@ -195,7 +195,7 @@ input {
  * Remove the inheritance of text transform in Edge, Firefox, and IE.
  * 1. Remove the inheritance of text transform in Firefox.
  */
-/* line 186, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 186, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button,
 select {
   /* 1 */
@@ -205,7 +205,7 @@ select {
 /**
  * Correct the inability to style clickable types in iOS and Safari.
  */
-/* line 195, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 195, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button,
 [type="button"],
 [type="reset"],
@@ -216,7 +216,7 @@ button,
 /**
  * Remove the inner border and padding in Firefox.
  */
-/* line 206, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 206, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button::-moz-focus-inner,
 [type="button"]::-moz-focus-inner,
 [type="reset"]::-moz-focus-inner,
@@ -228,7 +228,7 @@ button::-moz-focus-inner,
 /**
  * Restore the focus styles unset by the previous rule.
  */
-/* line 218, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 218, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
@@ -239,7 +239,7 @@ button:-moz-focusring,
 /**
  * Correct the padding in Firefox.
  */
-/* line 229, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 229, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 fieldset {
   padding: 0.35em 0.75em 0.625em;
 }
@@ -250,7 +250,7 @@ fieldset {
  * 3. Remove the padding so developers are not caught out when they zero out
  *    `fieldset` elements in all browsers.
  */
-/* line 240, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 240, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 legend {
   box-sizing: border-box;
   /* 1 */
@@ -269,7 +269,7 @@ legend {
 /**
  * Add the correct vertical alignment in Chrome, Firefox, and Opera.
  */
-/* line 253, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 253, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 progress {
   vertical-align: baseline;
 }
@@ -277,7 +277,7 @@ progress {
 /**
  * Remove the default vertical scrollbar in IE 10+.
  */
-/* line 261, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 261, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 textarea {
   overflow: auto;
 }
@@ -286,7 +286,7 @@ textarea {
  * 1. Add the correct box sizing in IE 10.
  * 2. Remove the padding in IE 10.
  */
-/* line 270, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 270, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -298,7 +298,7 @@ textarea {
 /**
  * Correct the cursor style of increment and decrement buttons in Chrome.
  */
-/* line 280, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 280, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 [type="number"]::-webkit-inner-spin-button,
 [type="number"]::-webkit-outer-spin-button {
   height: auto;
@@ -308,7 +308,7 @@ textarea {
  * 1. Correct the odd appearance in Chrome and Safari.
  * 2. Correct the outline style in Safari.
  */
-/* line 290, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 290, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -319,7 +319,7 @@ textarea {
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-/* line 299, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 299, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 [type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
@@ -328,7 +328,7 @@ textarea {
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-/* line 308, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 308, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
   /* 1 */
@@ -341,7 +341,7 @@ textarea {
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
  */
-/* line 320, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 320, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 details {
   display: block;
 }
@@ -349,7 +349,7 @@ details {
 /*
  * Add the correct display in all browsers.
  */
-/* line 328, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 328, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 summary {
   display: list-item;
 }
@@ -359,7 +359,7 @@ summary {
 /**
  * Add the correct display in IE 10+.
  */
-/* line 339, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 339, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 template {
   display: none;
 }
@@ -367,7 +367,7 @@ template {
 /**
  * Add the correct display in IE 10.
  */
-/* line 347, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_normalize.scss */
+/* line 347, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/normalize/normalize.css */
 [hidden] {
   display: none;
 }
@@ -381,7 +381,7 @@ template {
   font-display: block;
 }
 
-/* line 13, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 13, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'icomoon' !important;
@@ -396,237 +396,237 @@ template {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 28, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 28, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-x:before {
   content: "\e927";
 }
 
-/* line 31, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 31, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-computer-desktop:before {
   content: "\e900";
 }
 
-/* line 34, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 34, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-headphones:before {
   content: "\e901";
 }
 
-/* line 37, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 37, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-cloud:before {
   content: "\e902";
 }
 
-/* line 40, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 40, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-bar-graph:before {
   content: "\e903";
 }
 
-/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 43, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-transfer:before {
   content: "\e904";
 }
 
-/* line 46, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 46, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-shuffle:before {
   content: "\e905";
 }
 
-/* line 49, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 49, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-paperplane:before {
   content: "\e906";
 }
 
-/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 52, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-star:before {
   content: "\e907";
 }
 
-/* line 55, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 55, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-question-circle:before {
   content: "\e908";
 }
 
-/* line 58, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 58, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-lock:before {
   content: "\e909";
 }
 
-/* line 61, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 61, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-flask:before {
   content: "\e90a";
 }
 
-/* line 64, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 64, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-clock-o:before {
   content: "\e90b";
 }
 
-/* line 67, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 67, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-clipboard:before {
   content: "\e90c";
 }
 
-/* line 70, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 70, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-shopping-cart:before {
   content: "\e90d";
 }
 
-/* line 73, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 73, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-bullhorn:before {
   content: "\e90e";
 }
 
-/* line 76, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 76, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-phone-square:before {
   content: "\e90f";
 }
 
-/* line 79, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 79, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-handshake-o:before {
   content: "\e910";
 }
 
-/* line 82, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 82, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-phone:before {
   content: "\e911";
 }
 
-/* line 85, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 85, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-dashboard:before {
   content: "\e912";
 }
 
-/* line 88, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 88, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-ticket:before {
   content: "\e913";
 }
 
-/* line 91, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 91, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-pencil:before {
   content: "\e914";
 }
 
-/* line 94, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 94, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-money:before {
   content: "\e915";
 }
 
-/* line 97, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 97, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-envelope:before {
   content: "\e916";
 }
 
-/* line 100, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 100, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-hdd-o:before {
   content: "\e917";
 }
 
-/* line 103, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 103, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-globe:before {
   content: "\e918";
 }
 
-/* line 106, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 106, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-laptop:before {
   content: "\e919";
 }
 
-/* line 109, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 109, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-cloud-download:before {
   content: "\e91a";
 }
 
-/* line 112, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 112, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-group:before {
   content: "\e91b";
 }
 
-/* line 115, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 115, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-briefcase:before {
   content: "\e91c";
 }
 
-/* line 118, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 118, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-cloud1:before {
   content: "\e91d";
 }
 
-/* line 121, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 121, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-cogs:before {
   content: "\e91e";
 }
 
-/* line 124, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 124, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-code:before {
   content: "\e91f";
 }
 
-/* line 127, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 127, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-search:before {
   content: "\e920";
 }
 
-/* line 130, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 130, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-trending_up:before {
   content: "\e921";
 }
 
-/* line 133, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 133, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-phone_iphone:before {
   content: "\e922";
 }
 
-/* line 136, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 136, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-school:before {
   content: "\e923";
 }
 
-/* line 139, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 139, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-security:before {
   content: "\e924";
 }
 
-/* line 142, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 142, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-mouse:before {
   content: "\e925";
 }
 
-/* line 145, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 145, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-phone_in_talk:before {
   content: "\e926";
 }
 
-/* line 148, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 148, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-folder-open:before {
   content: "\e930";
 }
 
-/* line 151, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 151, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-display:before {
   content: "\e956";
 }
 
-/* line 154, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 154, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-download3:before {
   content: "\e9c7";
 }
 
-/* line 157, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 157, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-arrow-right2:before {
   content: "\ea3c";
 }
 
-/* line 160, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 160, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-facebook:before {
   content: "\ea90";
 }
 
-/* line 163, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 163, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-instagram:before {
   content: "\ea92";
 }
 
-/* line 166, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/_icomoon.scss */
+/* line 166, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/icomoon/icomoon.css */
 .icon-linkedin2:before {
   content: "\eaca";
 }
