@@ -944,14 +944,54 @@ template {
 /**
  * owl-carousel/custom.css
  */
-/* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+/* Remove empty space below affiliate sections. */
+/* line 6, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
   display: flex;
 }
 
-/* line 9, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+/* Allow affiliate description boxes to appear on hover. */
+/* line 11, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
 .owl-carousel .owl-stage-outer {
   overflow: inherit;
+}
+
+/* Position dots inside banner. */
+/* line 16, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+.owl-theme .owl-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 44px;
+}
+
+/* Style dots. */
+/* line 24, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+.owl-theme .owl-dots .owl-dot span {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 11px;
+  height: 11px;
+  margin: 0 10px;
+}
+
+/* Make dots white when active. */
+/* line 32, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #fff;
+  position: relative;
+}
+
+/* Create circle around active dot. */
+/* line 38, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/vendors/owl-carousel/custom.css */
+.owl-theme .owl-dots .owl-dot.active span::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  border: 2px solid #fff;
 }
 
 /* line 6, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/placeholders/_helpers.scss */
@@ -2156,7 +2196,7 @@ img {
   padding: 0 20px;
 }
 
-/* line 16, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_affiliates.scss */
+/* line 17, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_affiliates.scss */
 .affiliates__item:hover .affiliates__description-wrapper {
   display: block;
 }
@@ -2214,9 +2254,14 @@ img {
   filter: grayscale(1);
 }
 
-/* line 69, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_affiliates.scss */
+/* line 70, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_affiliates.scss */
 .affiliates__logo:hover {
   filter: grayscale(0);
+}
+
+/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.banner__carousel {
+  display: flex;
 }
 
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
@@ -2228,6 +2273,7 @@ img {
   color: #fff;
   min-height: 550px;
   background-color: #000;
+  flex: 0 0 100%;
 }
 
 @media (max-width: 992px) {
@@ -2251,7 +2297,7 @@ img {
 }
 
 @media (min-width: 992px) {
-  /* line 26, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_banner.scss */
+  /* line 32, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/home/_banner.scss */
   .banner__overlay ::before {
     content: "";
     position: absolute;

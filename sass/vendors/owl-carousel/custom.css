@@ -2,10 +2,46 @@
  * owl-carousel/custom.css
  */
 
+/* Remove empty space below affiliate sections. */
 .no-js .owl-carousel, .owl-carousel.owl-loaded {
     display: flex;
 }
 
+/* Allow affiliate description boxes to appear on hover. */
 .owl-carousel .owl-stage-outer {
     overflow: inherit;
+}
+
+/* Position dots inside banner. */
+.owl-theme .owl-dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 44px;
+}
+
+/* Style dots. */
+.owl-theme .owl-dots .owl-dot span {
+    background-color: hsla(0,0%,100%,.5);
+    width: 11px;
+    height: 11px;
+    margin: 0 10px;
+}
+
+/* Make dots white when active. */
+.owl-theme .owl-dots .owl-dot.active span {
+    background-color: #fff;
+    position: relative;
+}
+
+/* Create circle around active dot. */
+.owl-theme .owl-dots .owl-dot.active span::after {
+    content: "";
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #fff;
 }

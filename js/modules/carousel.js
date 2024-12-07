@@ -2,17 +2,29 @@
 // js/carousel.js
 // ==========================================================================
 
-// Configure owl carousel.
 export function initCarousel() {
     $(document).ready(function(){
-        $(".owl-carousel").owlCarousel({
+
+        // Configure affiliates carousels.
+        $(".affiliates__carousel").owlCarousel({
             autoplay:true,
             autoplayTimeout:3500,
             autoplayHoverPause:true,
             loop:true,
-            margin:50,
             autoWidth:true,
-            mouseDrag:false
+            mouseDrag:false,
+            margin:50
+        });
+
+        // Configure banner carousel.
+        $(".banner__carousel").owlCarousel({
+            autoplay:true,
+            autoplayTimeout:4500,
+            autoplayHoverPause:true,
+            autoHeight:true,
+            loop:true,
+            dots:true,
+            items:1
         });
     });
 }

@@ -3,6 +3,9 @@
 // ==========================================================================
 
 .banner {
+    // Override owl carousel display (for when js is disabled).
+    @include e(carousel) { display: flex; }
+
     // Stack and center banner contents vertically.
     @include e(item) {
         @include flex($disp: flex, $dir: column, $just: center);
@@ -10,6 +13,9 @@
         color: $color--white;
         min-height: 550px;
         background-color: $color--black; // For dimming effect.
+
+        // Make banner stretch to page width (for when js is disabled).
+        flex: 0 0 100%;
 
         // Center banner contents horizontally on md- screens.
         @include mq_max($breakpoint--md) { text-align: center; }
