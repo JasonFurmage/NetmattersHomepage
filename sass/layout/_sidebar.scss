@@ -1,0 +1,14 @@
+// ==========================================================================
+// layout/sidebar.scss
+// ==========================================================================
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    height: 100%;
+    width: 275px;
+    background: $color--navy-dark;
+    overflow: auto;
+}

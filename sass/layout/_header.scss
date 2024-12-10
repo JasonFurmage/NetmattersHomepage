@@ -66,6 +66,13 @@
     @include e(hamburger) {
         @include flex($disp: flex, $dir: column, $just: center);
         border: 0;
+
+        // Turn lines into a cross when hamburger is clicked.
+        &.active {
+            :nth-child(1) { transform: rotate(-45deg) translate(-6px, 6px); }
+            :nth-child(2) { opacity: 0; }
+            :nth-child(3) { transform: rotate(45deg) translate(-7.5px, -8px); }
+        }
     }
 
     // Set hamburger line size and spacing.
@@ -74,6 +81,7 @@
         width: 33px;
         background-color: $color--white;
         margin-top: 6px;
+        transition: 0.4s;
 
         &:first-child { margin-top: 0; } // Remove margin top from first line.
     }

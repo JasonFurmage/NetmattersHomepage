@@ -5385,6 +5385,17 @@ img {
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_content.scss */
 .content {
   overflow: hidden;
+  background-color: #fff;
+  position: relative;
+  z-index: 10;
+  transition: all .5s;
+  left: 0;
+}
+
+/* line 13, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_content.scss */
+.content.sidebar-active {
+  left: -275px;
+  cursor: pointer;
 }
 
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
@@ -5720,15 +5731,31 @@ img {
   border: 0;
 }
 
+/* line 72, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+.header__hamburger.active :nth-child(1) {
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+/* line 73, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+.header__hamburger.active :nth-child(2) {
+  opacity: 0;
+}
+
+/* line 74, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+.header__hamburger.active :nth-child(3) {
+  transform: rotate(45deg) translate(-7.5px, -8px);
+}
+
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
 .header__hamburger-line {
   height: 4px;
   width: 33px;
   background-color: #fff;
   margin-top: 6px;
+  transition: 0.4s;
 }
 
-/* line 78, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+/* line 86, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
 .header__hamburger-line:first-child {
   margin-top: 0;
 }
@@ -5771,7 +5798,7 @@ img {
   border: 2px solid rgba(0, 0, 0, 0.1);
 }
 
-/* line 105, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
+/* line 113, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_header.scss */
 .header__search-xs:active, .header__search-xs:focus {
   border: 2px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 3px #fff;
@@ -6177,6 +6204,18 @@ img {
   display: block;
 }
 
+/* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_sidebar.scss */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9;
+  height: 100%;
+  width: 275px;
+  background: #333645;
+  overflow: auto;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_sticky.scss */
 .sticky {
   position: fixed;
@@ -6186,6 +6225,13 @@ img {
   box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
   animation-duration: .25s;
   transition: all .5s;
+}
+
+/* line 13, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_sticky.scss */
+.sticky.sidebar-active {
+  left: -275px;
+  right: 275px;
+  cursor: pointer;
 }
 
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */

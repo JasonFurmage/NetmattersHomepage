@@ -9,4 +9,10 @@
     box-shadow: 0 5px 35px $rgba--grey-dark;
     animation-duration: .25s;
     transition: all .5s;
+
+    &.sidebar-active {
+        left: -275px;
+        right: 275px;
+        cursor: pointer;
+    }
 }

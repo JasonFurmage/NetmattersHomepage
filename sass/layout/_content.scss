@@ -4,4 +4,14 @@
 
 .content {
     overflow: hidden; // Prevent horizontal scrolling.
+    background-color: #fff;
+    position: relative;
+    z-index: 10;
+    transition: all .5s;
+    left: 0;
+
+    &.sidebar-active {
+        left: -275px;
+        cursor: pointer;
+    }
 }
