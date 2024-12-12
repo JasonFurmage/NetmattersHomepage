@@ -3,15 +3,11 @@
 // ==========================================================================
 
 .content {
-    overflow: hidden; // Prevent horizontal scrolling.
-    background-color: #fff;
     position: relative;
-    z-index: 10;
-    transition: all .5s;
     left: 0;
-
-    &.sidebar-active {
-        left: -275px;
-        cursor: pointer;
-    }
+    background-color: $color--white;
+    transition: all .5s;
+    z-index: 10;
+    overflow: hidden; // Prevent horizontal scrolling.
+    @extend %overlay;
 }

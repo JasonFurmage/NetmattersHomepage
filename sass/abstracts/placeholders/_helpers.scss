@@ -13,3 +13,18 @@
     height: 100%;
     width: 100%;
 }
+
+// Background color for sidebark links.
+%sidebar-link-bg-color {
+    background-color: $rgba--grey-darkest;
+}
+
+// Dark outer divider for sidebar items.
+%sidebar-item-divider-outer {
+    border-top: 1px solid $rgba--grey-darkest3;
+}
+
+// Light inner divider for sidebar items.
+%sidebar-item-divider-inner {
+    border-top: 1px solid $hsla--grey-dark;
+}

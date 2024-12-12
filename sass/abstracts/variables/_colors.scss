@@ -2,6 +2,7 @@
 // variables/colors.scss
 // ==========================================================================
 //
+
 // Multi-use Colors
 $color--black           : #000;
 $color--white           : #fff;
@@ -19,11 +20,18 @@ $color--textfield-border-focus      : #5bc0de;
 $color--textfield-font-color        : #555;
 
 //RGBA Colors
-$rgba--black-light   : rgba(0,0,0,0.7);
-$rgba--grey          : rgba(0,0,0,0.075);
-$rgba--grey-dark     : rgba(0,0,0,0.1);
-$rgba--grey-darker   : rgba(0,0,0,0.2);
-$rgba--cyan          : rgba(91,192,222,0.6);
+$rgba--black-light      : rgba(0,0,0,0.7);;
+$rgba--grey             : rgba(0,0,0,0.075);
+$rgba--grey-dark        : rgba(0,0,0,0.1);
+$rgba--grey-darker      : rgba(0,0,0,0.2);
+$rgba--grey-darkest     : rgba(0,0,0,0.25);
+$rgba--grey-darkest2    : rgba(0,0,0,0.4);
+$rgba--grey-darkest3    : rgba(0,0,0,0.45);
+$rgba--cyan             : rgba(91,192,222,0.6);
+
+//HSLA Colors
+$hsla--grey          : hsla(0, 0%, 100%, 0.1);
+$hsla--grey-dark     : hsla(0, 0%, 100%, 0.05);
 
 
 // Color Maps

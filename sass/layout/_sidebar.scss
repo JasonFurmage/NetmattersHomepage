@@ -5,10 +5,109 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: 0;
-    z-index: 9;
+    right: 0; // Fix to right of page.
     height: 100%;
     width: 275px;
     background: $color--navy-dark;
+    z-index: 9;
     overflow: auto;
+
+    @include mq_min($breakpoint--md) { width: 350px; } // Increase width on md+ screens.
+
+    @include e(primary) {
+        padding: 21px;
+    }
+
+    @include e(primary-menu) {
+        margin: -20px 0 0;
+    }
+
+    // Add space between items.
+    @include e(primary-item) {
+        padding: 20px 0 0;
+    }
+
+    @include e(primary-heading) {
+        @include font($size: rem(18px), $algn: center, $trfm: uppercase, $color: $color--white);
+        border-radius: 3px;
+        border: 1px solid $hsla--grey;
+        outline: 1px solid $rgba--grey-darkest;
+        padding: 19px 0 18px;
+    }
+
+    // Set icon size and color.
+    @include e(primary-icon) {
+        @include font($size: rem(23.008px), $color: $color--white);
+        @include color-modifiers($color-map--services);
+        padding-bottom: 10px;
+    }
+
+    @include e(primary-title) {
+        font-size: rem(10px);
+        padding-bottom: 1px;
+    }
+
+    @include e(primary-submenu) {
+        border-radius: 3px;
+        margin-top: 20px;
+        overflow: hidden;
+    }
+
+    // Add outer divider between items.
+    @include e(primary-subitem) {
+        @extend %sidebar-item-divider-outer;
+    }
+
+    @include e(primary-sublink) {
+        @include font($algn: center, $trfm: uppercase, $color: $color--white);
+        @extend %sidebar-link-bg-color;
+        @extend %sidebar-item-divider-inner; // Add inner divider.
+        padding: 10px;
+    }
+ 
+    // Add divider between sections.
+    @include e(secondary) {
+        border-top: 1px solid $rgba--grey-darkest;
+        border-bottom: 1px solid $hsla--grey;
+    }
+
+    // Add divider between sections.
+    @include e(secondary-menu) {
+        border-top: 1px solid $hsla--grey;
+        border-bottom: 1px solid $rgba--grey-darkest;
+
+        // Highlight heading when hovering on menu.
+        &:hover { 
+            .sidebar__secondary-heading { background-color: $hsla--grey-dark; }
+        }
+    }
+
+    @include e(secondary-heading) {
+        @include font($size: rem(16px), $hght: 1, $trfm: uppercase, $color: $color--white);
+        position: relative;
+        padding: 20px;
+
+        &:hover { text-decoration: none; }
+    }
+
+    // Add outer divider between items.
+    @include e(secondary-item) {
+        @extend %sidebar-item-divider-outer;
+    }
+
+    @include e(secondary-link) {
+        @include font($size: rem(14px), $trfm: uppercase, $color: $color--white);
+        @extend %sidebar-link-bg-color;
+        @extend %sidebar-item-divider-inner; // Add inner divider.
+        position: relative;
+        padding: 15px 20px;
+
+        // Add arrow icon before text.
+        &::before {
+            content: "\BB";
+            padding-right: 15px;
+        }
+    }
+
+    @include e(primary-heading, primary-icon, primary-title, primary-sublink, secondary-heading, secondary-link) { display: block; }
 }
