@@ -14,7 +14,7 @@ body {
 }
 
 h1 {
-    @include font($size: rem(36px), $hght: 1.1);
+    @include font($size: rem(36px), $wght: $font-weight--regular, $hght: 1.1);
 }
 
 h2, h3, h4 {

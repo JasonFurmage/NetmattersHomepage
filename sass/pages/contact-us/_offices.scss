@@ -1,0 +1,65 @@
+// ==========================================================================
+// contact-us/offices.scss
+// ==========================================================================
+
+.offices {
+    @include e(heading-wrapper) {
+        // Show navy heading bar on sm- screens.
+        @include mq_max($breakpoint--md - 1) {
+            background-color: $color--navy-dark;
+            padding: 24px 0; 
+            margin: -50px 0 50px;
+        }
+    }
+
+    @include e(heading) {
+        color: $color--navy-dark;
+        margin-bottom: 47px;
+
+        // Use white text for navy heading bar.
+        @include mq_max($breakpoint--md - 1) {
+            color: $color--white;
+            margin: 0;
+        }
+    }
+
+    @include e(outer-wrapper) { margin-bottom: 40px; } // Add space below office section.
+    @include e(inner-wrapper) { margin-top: 20px;} // ????
+    @include e(item-wrapper) { margin-bottom: 30px; } // Add space between items.
+
+    // Style item cards.
+    @include e(item) {
+        border-radius: 20px;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        padding: 0;
+        margin-top: 30px;
+        overflow: hidden;
+    }
+
+    @include e(image) { width: 100%; } // Fit image inside container.
+    @include e(content) { padding: 30px; } // Indent content.
+    @include e(title-wrapper) { font-size: rem(20px); }
+    @include e(title) { color: $color--navy-dark; }
+
+    @include e(address) {
+        @include font($size: rem(13px), $hght: rem(22px));
+        margin-bottom: 15px;
+    }
+    
+    @include e(tel-wrapper) {
+        @include color-modifiers($color-map--services);
+        display: block; // Keep tel number and btn on separate lines.
+        font-weight: $font-weight--bold;
+    }
+
+    @include e(tel) {
+        @include font($size: rem(26px), $hght: 1.1);
+    }
+
+    @include e(btn) {
+        font-size: rem(14.4px);
+        padding: 5px 30px;
+        margin-top: 15px;
+    }
+}
