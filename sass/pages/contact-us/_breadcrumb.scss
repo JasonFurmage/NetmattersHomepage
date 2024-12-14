@@ -1,0 +1,35 @@
+// ==========================================================================
+// contact-us/breadcrumb.scss
+// ==========================================================================
+
+.breadcrumb {
+    padding: 14px 0 13px;
+    box-shadow: 0 5px 35px $rgba--grey-dark;
+
+    // Add divider between breacrumb and header on sm- screens.
+    @include mq_max($breakpoint--md - 1) {
+        border-top: 1px solid $color--navy-dark;
+    }
+
+    @include e(path) {
+        @include font($size: rem(13px), $color: $color--navy-dark);
+    }
+
+    // Put path items on same line.
+    @include e(item) {
+        display: inline-block;
+    }
+
+    @include e(previous) {
+        @include font($wght: $font-weight--bold, $color: $color--navy-dark);
+    }
+
+    // Add forward clash between items.
+    @include e(current) {
+        &::before {
+            content: "/\A0";
+            @include font($wght: $font-weight--regular, $color: $color--navy-dark);
+            padding: 0 5px;
+        }
+    }
+}

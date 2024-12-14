@@ -7206,6 +7206,44 @@ img {
   margin-bottom: 13px;
 }
 
+/* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/contact-us/_breadcrumb.scss */
+.breadcrumb {
+  padding: 14px 0 13px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 991px) {
+  /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/contact-us/_breadcrumb.scss */
+  .breadcrumb {
+    border-top: 1px solid #333645;
+  }
+}
+
+/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.breadcrumb__path {
+  font-size: 0.8125rem;
+  color: #333645;
+}
+
+/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.breadcrumb__item {
+  display: inline-block;
+}
+
+/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.breadcrumb__previous {
+  font-weight: 700;
+  color: #333645;
+}
+
+/* line 29, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/pages/contact-us/_breadcrumb.scss */
+.breadcrumb__current::before {
+  content: "/\A0";
+  font-weight: 400;
+  color: #333645;
+  padding: 0 5px;
+}
+
 @media (max-width: 991px) {
   /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
   .offices__heading-wrapper {
@@ -7218,7 +7256,7 @@ img {
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
 .offices__heading {
   color: #333645;
-  margin-bottom: 47px;
+  margin: 0 0 47.5px;
 }
 
 @media (max-width: 991px) {
@@ -7232,11 +7270,6 @@ img {
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
 .offices__outer-wrapper {
   margin-bottom: 40px;
-}
-
-/* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
-.offices__inner-wrapper {
-  margin-top: 20px;
 }
 
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */

@@ -14,7 +14,7 @@
 
     @include e(heading) {
         color: $color--navy-dark;
-        margin-bottom: 47px;
+        margin: 0 0 47.5px;
 
         // Use white text for navy heading bar.
         @include mq_max($breakpoint--md - 1) {
@@ -24,7 +24,6 @@
     }
 
     @include e(outer-wrapper) { margin-bottom: 40px; } // Add space below office section.
-    @include e(inner-wrapper) { margin-top: 20px;} // ????
     @include e(item-wrapper) { margin-bottom: 30px; } // Add space between items.
 
     // Style item cards.
