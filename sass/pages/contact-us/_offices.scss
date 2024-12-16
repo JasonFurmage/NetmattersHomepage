@@ -24,7 +24,13 @@
     }
 
     @include e(outer-wrapper) { margin-bottom: 40px; } // Add space below office section.
-    @include e(item-wrapper) { margin-bottom: 30px; } // Add space between items.
+
+    // Add space between items (except last one).
+    @include e(item-wrapper) { 
+        @include mq_max($breakpoint--md - 1) {
+            &:not(&:last-child) { margin-bottom: 30px; }
+        } 
+    }
 
     // Style item cards.
     @include e(item) {

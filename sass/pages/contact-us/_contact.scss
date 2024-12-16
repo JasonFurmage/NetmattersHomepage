@@ -1,0 +1,31 @@
+// ==========================================================================
+// contact-us/contact.scss
+// ==========================================================================
+
+.contact {
+    @include e(paragraph) { color: $color--navy-dark; }
+
+    @include e(email) {
+        @include font($size: rem(26px), $wght: $font-weight--semi-bold, $hght: 1.1);
+        @include color-modifiers($color-map--services);
+    }
+
+    // Underline accordion on hover.
+    @include e(accordion-wrapper) {
+        &:hover { 
+            .contact__accordion { text-decoration: underline; }
+        }
+    }
+
+    @include e(accordion) {
+        @include font($wght: $font-weight--semi-bold, $color: $color--navy-dark);
+        pointer-events: none; // Prevent clicking link.
+    }
+
+    // Hide accordion panel by default.
+    @include e(accordion-panel) {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.4s linear;
+    }
+}
