@@ -4,7 +4,8 @@
 
 // Default text field styles.
 .textfield {
-    @include font($size: 14px, $color: $color--textfield-font-color);
+    @include font($size: 14px, $hght: 20px, $color: $color--textfield-font-color);
+    display: block;
     height: 47px;
     width: 100%;
     border: 1px solid $color--grey-light; 

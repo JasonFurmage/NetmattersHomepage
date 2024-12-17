@@ -1,0 +1,63 @@
+// ==========================================================================
+// contact-us/form.scss
+// ==========================================================================
+
+.form {
+    color: $color--navy-dark;
+    background-color: $color--grey-lighter;
+    border-radius: 10px;
+    padding: 30px;
+
+    // Add space between form elements.
+    @include e(group) { margin-bottom: 15px; }
+
+    @include e(textarea) {
+        height: 100px;
+        min-height: 100px;
+    }
+
+    @include e(marketing-wrapper) {
+        line-height: 32px;
+        cursor: pointer;
+    }
+
+    // Put checkbox and marketing text on same line.
+    @include e(marketing) { display: flex; }
+
+    // Hide real checkbox.
+    @include e(checkbox-hidden) {
+        display: none;
+
+        // Change background color and add checkmark to custom checkbox.
+        &:checked + .form__checkbox-custom {
+            background-color: $color--navy-dark;
+            &::before {
+                content: "✓";
+                position: absolute;
+            }
+        }
+    }
+
+    // Style custom checkbox.
+    @include e(checkbox-custom) {
+        @include flex($disp: flex, $algn: center, $just: center);
+        @include font($size: 20px, $color: $color--white);
+        height: 32px;
+        width: 32px;
+        border: 3px solid $color--navy-dark;
+        border-radius: 3px;
+        margin-right: 20px;
+    }
+
+    @include e(recaptcha) {
+        @include font($size: 11px, $wght: $font-weight--semi-bold);
+        margin-bottom: 30px;
+    }
+
+    // Put submit btn and helper text on opposites sides.
+    @include e(action) {
+        @include flex($disp: flex, $algn: center, $just: space-between);
+    }
+
+    @include e(helper) { font-size: 85%; }
+}

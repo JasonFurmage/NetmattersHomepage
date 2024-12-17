@@ -8,7 +8,7 @@
     <script src="js/main.js" type="module"></script>
     <script src="https://kit.fontawesome.com/8736d823db.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body data-page="contact-us">
     <div class="content">
         <header id="header">
             <div class="header">
@@ -483,10 +483,10 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
-            <div class="section bottom container">
-                <div class="row">
-                    <div class="col-lg-4">
+        <div class="section bottom container">
+            <div class="row row-reverse">
+                <div class="col-lg-4">
+                    <div class="contact">
                         <p class="contact__paragraph"><strong>Email us on:</strong><br></p>
                         <p class="contact__paragraph"><a href="#" class="contact__email contact__email--web">sales@netmatters.com</a></p>
                         <p class="contact__paragraph"><strong>Business hours:</strong></p>
@@ -508,6 +508,67 @@
                                     within 45 minutes of your call.&nbsp;
                                 </p>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="form">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form__group">
+                                    <label for="name" class="required-after">Your Name</label>
+                                    <input class="textfield" name="name" type="text" value="" id="name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form__group">
+                                    <label for="company" class="">Company Name</label>
+                                    <input class="textfield" name="company" type="text" value="" id="company">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form__group">
+                                    <label for="email" class="required-after">Your Email</label>
+                                    <input class="textfield" name="email" type="email" value="" id="email">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form__group">
+                                    <label for="telephone" class="required-after">Your Telephone Number</label>
+                                    <input class="textfield" name="telephone" type="text" value="" id="telephone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form__group">
+                            <label for="message" class="required-after">Message</label>
+                            <textarea class="form__textarea textfield" name="message" cols="50" rows="10" id="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                        </div>
+                        <div class="form__group">
+                            <label class="form__marketing-wrapper">
+                                <span class="form__marketing">
+                                    <span class="form__checkbox-wrapper">
+                                        <input class="form__checkbox-hidden" name="marketing_preference" type="checkbox" value="1">
+                                        <span class="form__checkbox-custom"></span>
+                                    </span>
+                                    <span class="form__text-wrapper">
+                                        Please tick this box if you wish to receive marketing information from us.
+                                        Please see our <a href="#" target="_blank"><u>Privacy Policy</u></a> for more information 
+                                        on how we keep your data safe.
+                                    </span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="form__recaptcha">
+                            <span>
+                                This site is protected by reCAPTCHA and the Google <a href="#" target="_blank"><u>Privacy Policy</u></a>
+                                and <a href="#" target="_blank"><u>Terms of Service</u></a> apply.
+                            </span>
+                        </div>
+                        <div class="form__action">
+                            <button class="btn btn--primary">
+                                Send Enquiry
+                            </button>
+                            <small class="form__helper required-before">Fields Required</small>
                         </div>
                     </div>
                 </div>

@@ -2,17 +2,18 @@
 // js/main.js
 // ==========================================================================
 
-import './vendor/jquery/jquery-3.7.1.min.js';
-import './vendor/owl-carousel/owl.carousel.min.js';
+const page = document.body.dataset.page;
 
-import { initCarousel } from './modules/carousel.js';
-import { initCookies } from "./modules/cookies.js";
-import { initSidebar } from './modules/sidebar.js';
-import { initSticky } from './modules/sticky.js';
-import { initAccordion } from './modules/accordion.js';
+if (page === "home") {
+    import("./modules/carousel.js").then(({ initCarousel }) => { initCarousel(); });
+}
 
-initAccordion();
-initCarousel();
-initCookies();
-initSidebar();
-initSticky();
+if (page === "contact-us") {
+    import("./modules/accordion.js").then(({ initAccordion }) => { initAccordion(); });
+}
+
+if (page === "home" || page === "contact-us") {
+    import("./modules/cookies.js").then(({ initCookies }) => { initCookies(); });
+    import("./modules/sidebar.js").then(({ initSidebar }) => { initSidebar(); });
+    import("./modules/sticky.js").then(({ initSticky }) => { initSticky(); });
+}

@@ -1,0 +1,19 @@
+// ==========================================================================
+// utilities/required.scss
+// ==========================================================================
+
+// Add asterisk before element.
+.required-before {
+    &::before {
+        content: "* ";
+        color: $color--required-asterisk;
+    }
+}
+
+// Add asterisk after element.
+.required-after {
+    &::after {
+        content: " *";
+        color: $color--required-asterisk;
+    }
+}
