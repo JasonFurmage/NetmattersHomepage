@@ -1,0 +1,55 @@
+// ==========================================================================
+// placeholders/sidebar.scss
+// ==========================================================================
+
+%sidebar-active {
+    // Cover element with overlay.
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        height: 0;
+        width: 0;
+        background: $rgba--grey-d4;
+        opacity: 0;
+        transition: opacity .5s,width .1s .5s,height .1s .5s;
+        z-index: 10;
+    }
+
+    // Move element to left to reveal sidebar.
+    &.sidebar-active {
+        left: -275px;
+        right: 275px;
+        pointer-events: none;
+        cursor: pointer;
+    
+        // Account for larger sidebar on md+ screens.
+        @include mq_min($breakpoint--md) { 
+            left: -350px;
+            right: 350px;
+        }
+    
+        // Dim overlay.
+        &::after {
+            height: 100%;
+            width: 100%;
+            opacity: 1;
+            transition: opacity .5s;
+        }
+    }
+}
+
+// Background color for sidebark links.
+%sidebar-link-bg-color {
+    background-color: $rgba--grey-d3;
+}
+
+// Dark outer divider for sidebar items.
+%sidebar-item-divider-outer {
+    border-top: 1px solid $rgba--grey-d5;
+}
+
+// Light inner divider for sidebar items.
+%sidebar-item-divider-inner {
+    border-top: 1px solid $hsla--grey-dark;
+}

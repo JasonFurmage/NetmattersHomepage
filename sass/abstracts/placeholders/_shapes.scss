@@ -26,18 +26,3 @@
         margin: auto;
     }
 }
-
-// Overlay for content and sticky header.
-%overlay {
-    &::after {
-        content: "";
-        position: absolute;
-        top: 0;
-        height: 0;
-        width: 0;
-        background: $rgba--grey-darkest2;
-        opacity: 0;
-        transition: opacity .5s,width .1s .5s,height .1s .5s;
-        z-index: 10;
-    }
-}

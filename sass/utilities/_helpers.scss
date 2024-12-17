@@ -7,28 +7,7 @@
     overflow: hidden;
 }
 
-// Move element to left to reveal sidebar.
-.sidebar-active {
-    left: -275px;
-    right: 275px;
-    pointer-events: none;
-    cursor: pointer;
-
-    // Account for larger sidebar on md+ screens.
-    @include mq_min($breakpoint--md) { 
-        left: -350px;
-        right: 350px;
-    }
-
-    // Dim overlay.
-    &::after {
-        height: 100%;
-        width: 100%;
-        opacity: 1;
-        transition: opacity .5s;
-    }
-}
-
+// Reverse order of flex items.
 .row-reverse {
     flex-direction: row-reverse;
 }

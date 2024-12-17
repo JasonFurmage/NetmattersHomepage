@@ -80,10 +80,10 @@
         height: 4px;
         width: 33px;
         background-color: $color--white;
-        margin-top: 6px;
         transition: 0.4s;
 
-        &:first-child { margin-top: 0; } // Remove margin top from first line.
+        // Add space above bottom and middle line.
+        &:not(&:first-child) { margin-top: 6px; }
     }
 
     @include e(form) {
@@ -106,12 +106,12 @@
 
     // Style search-xs bar.
     @include e(search-xs) {
-        background-color: $rgba--grey-dark;
-        border: 2px solid $rgba--grey-dark;
+        background-color: $rgba--grey-d1;
+        border: 2px solid $rgba--grey-d1;
 
         // Override default active and focus styles.
         &:active, &:focus {
-            border: 2px solid $rgba--grey-dark;
+            border: 2px solid $rgba--grey-d1;
             box-shadow: 0 0 3px $color--white;
         }
     }

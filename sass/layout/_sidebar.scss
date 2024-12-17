@@ -31,7 +31,7 @@
         @include font($size: rem(18px), $algn: center, $trfm: uppercase, $color: $color--white);
         border-radius: 3px;
         border: 1px solid $hsla--grey;
-        outline: 1px solid $rgba--grey-darkest;
+        outline: 1px solid $rgba--grey-d3;
         padding: 19px 0 18px;
     }
 
@@ -67,14 +67,14 @@
  
     // Add divider between sections.
     @include e(secondary) {
-        border-top: 1px solid $rgba--grey-darkest;
+        border-top: 1px solid $rgba--grey-d3;
         border-bottom: 1px solid $hsla--grey;
     }
 
     // Add divider between sections.
     @include e(secondary-menu) {
         border-top: 1px solid $hsla--grey;
-        border-bottom: 1px solid $rgba--grey-darkest;
+        border-bottom: 1px solid $rgba--grey-d3;
 
         // Highlight heading when hovering on menu.
         &:hover { 

@@ -8,10 +8,12 @@
 
     @include e(articles) {
         margin-top: -30px;
+    }
 
-        // Hide last article on screens between sm and lg.
+    // Hide last article on screens between sm and lg.
+    @include e(item-wrapper) {
         @include mq_range($breakpoint--sm, $breakpoint--lg - 1) {
-            .news__item-wrapper:last-child { display: none; }
+            &:last-child { display: none; }
         }
     }
 

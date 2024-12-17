@@ -9,5 +9,5 @@
     transition: all .5s;
     z-index: 10;
     overflow: hidden; // Prevent horizontal scrolling.
-    @extend %overlay;
+    @extend %sidebar-active;
 }

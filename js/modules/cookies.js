@@ -1,5 +1,5 @@
 // ==========================================================================
-// js/cookies.js
+// modules/cookies.js
 // ==========================================================================
 
 const $cookiesOverlay = document.querySelector('.cookies__overlay');

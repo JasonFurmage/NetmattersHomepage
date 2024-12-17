@@ -6,8 +6,8 @@
     @include inset-fill(fixed); // Stick to top of page.
     bottom: auto;
     z-index: 11; // Keep on top of other elements.
-    box-shadow: 0 5px 35px $rgba--grey-dark;
+    box-shadow: 0 5px 35px $rgba--grey-d1;
     animation-duration: .25s;
     transition: all .5s;
-    @extend %overlay;
+    @extend %sidebar-active;
 }

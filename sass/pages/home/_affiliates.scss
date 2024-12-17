@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .affiliates {
-    // Put affiliates on same line.
+    // Override owl carousel display (for when js is disabled).
     @include e(carousel) { display: flex; }
 
     @include e(item) {

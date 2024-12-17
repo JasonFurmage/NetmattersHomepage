@@ -4,7 +4,7 @@
 
 .breadcrumb {
     padding: 14px 0 13px;
-    box-shadow: 0 5px 35px $rgba--grey-dark;
+    box-shadow: 0 5px 35px $rgba--grey-d1;
 
     // Add divider between breacrumb and header on sm- screens.
     @include mq_max($breakpoint--md - 1) {

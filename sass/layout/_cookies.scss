@@ -16,7 +16,7 @@
         bottom: 0;
 
         // Add box shadow on hover.
-        &:hover { box-shadow: 0 3px 35px $rgba--grey-dark; }
+        &:hover { box-shadow: 0 3px 35px $rgba--grey-d1; }
     }
 
     // Cover page contents with overlay.
@@ -38,7 +38,7 @@
     @include e(popup) {
         background-color: $color--white;
         background-clip: padding-box;
-        border: 1px solid $rgba--grey-darker;
+        border: 1px solid $rgba--grey-d2;
         border-radius: 5px;
     }
 

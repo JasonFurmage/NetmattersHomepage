@@ -1,5 +1,5 @@
 // ==========================================================================
-// js/accordion.js
+// modules/accordion.js
 // ==========================================================================
 
 const $contactAccordionWrapper = document.querySelector('.contact__accordion-wrapper');

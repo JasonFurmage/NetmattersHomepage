@@ -3,7 +3,7 @@
 // ==========================================================================
 
 .contact {
-    @include e(paragraph) { color: $color--navy-dark; }
+    color: $color--navy-dark;
 
     @include e(email) {
         @include font($size: rem(26px), $wght: $font-weight--semi-bold, $hght: 1.1);
@@ -18,7 +18,7 @@
     }
 
     @include e(accordion) {
-        @include font($wght: $font-weight--semi-bold, $color: $color--navy-dark);
+        font-weight: $font-weight--semi-bold;
         pointer-events: none; // Prevent clicking link.
     }
 

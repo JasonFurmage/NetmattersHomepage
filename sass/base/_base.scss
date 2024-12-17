@@ -28,10 +28,6 @@ p {
     margin-bottom: 25px;
 }
 
-strong {
-    @include font($wght: $font-weight--semi-bold);
-}
-
 a {
     color: inherit;
     text-decoration: none;
@@ -53,8 +49,12 @@ img {
     vertical-align: middle;
 }
 
+strong {
+    @include font($wght: $font-weight--semi-bold);
+}
+
 label {
     display: inline-block;
-    margin-bottom: 5px;
     font-weight: $font-weight--semi-bold;
+    margin-bottom: 5px;
 }
