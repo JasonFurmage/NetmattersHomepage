@@ -12,6 +12,7 @@ if (page === "home") {
 // Import modules specific to contact-us page.
 if (page === "contact-us") {
     import("./modules/accordion.js").then(({ initAccordion }) => { initAccordion(); });
+    import("./modules/validation.js").then(({ initValidation }) => { initValidation(); });
 }
 
 // Import shared modules.

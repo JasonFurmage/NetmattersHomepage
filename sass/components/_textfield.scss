@@ -21,4 +21,8 @@
         border-color: $color--textfield-border-focus;
         box-shadow: inset 0 1px 1px $rgba--grey, 0 0 8px $rgba--cyan;
     }
+
+    @include m(error) {
+        border-color: #d64541;
+    }
 }

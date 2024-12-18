@@ -5420,6 +5420,11 @@ label {
   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(91, 192, 222, 0.6);
 }
 
+/* line 17, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
+.textfield--error {
+  border-color: #d64541;
+}
+
 /* line 5, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/layout/_container.scss */
 .container {
   margin-right: auto;
