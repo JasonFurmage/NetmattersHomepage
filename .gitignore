@@ -1,1 +1,12 @@
-.DS_Store
+# Ignore system files
+.DS_Store           # macOS system file
+Thumbs.db           # Windows system file
+
+# Ignore environment variables file
+.env
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore vscode files
+.vscode/            # Visual Studio Code
