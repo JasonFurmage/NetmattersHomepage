@@ -1,5 +1,5 @@
 // ==========================================================================
-// modules/validation.js
+// modules/form.js
 // ==========================================================================
 
 const $form = document.getElementById('form');
@@ -8,7 +8,7 @@ const $emailTextField = document.getElementById('email');
 const $telephoneTextField = document.getElementById('telephone');
 const $messageTextArea = document.getElementById('message');
 
-export function initValidation() {
+export function initForm() {
     $form.addEventListener('submit', submitForm);
     $nameTextField.addEventListener('input', () => isValid($nameTextField));
     $emailTextField.addEventListener('input', () => isValid($emailTextField, true));
