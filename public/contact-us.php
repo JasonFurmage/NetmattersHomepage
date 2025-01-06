@@ -6,6 +6,7 @@
 // Load dependencies.
 require_once '../config/bootstrap.php';
 require_once '../includes/connection.php';
+require_once '../includes/form.php';
 
 // Define variables.
 $pageTitle = 'Contact Us | Netmatters';

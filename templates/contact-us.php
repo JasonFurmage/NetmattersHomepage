@@ -96,41 +96,42 @@
                 </div>
                 <div class="col-lg-8">
                     <form class="form" method="POST" action="#form" accept-charset="UTF-8" id="form" novalidate="novalidate">
+                        <?php if ($isPost) { showFormStatus($errors); } ?>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form__group">
                                     <label for="name" class="required-after">Your Name</label>
-                                    <input class="textfield" name="name" type="text" value="" id="name">
+                                    <input class="textfield" name="name" type="text" value="<?= htmlspecialchars($name) ?>" id="name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form__group">
                                     <label for="company">Company Name</label>
-                                    <input class="textfield" name="company" type="text" value="" id="company">
+                                    <input class="textfield" name="company" type="text" value="<?= htmlspecialchars($company) ?>" id="company">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form__group">
                                     <label for="email" class="required-after">Your Email</label>
-                                    <input class="textfield" name="email" type="email" value="" id="email">
+                                    <input class="textfield" name="email" type="email" value="<?= htmlspecialchars($email) ?>" id="email">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form__group">
                                     <label for="telephone" class="required-after">Your Telephone Number</label>
-                                    <input class="textfield" name="telephone" type="text" value="" id="telephone">
+                                    <input class="textfield" name="telephone" type="text" value="<?= htmlspecialchars($telephone) ?>" id="telephone">
                                 </div>
                             </div>
                         </div>
                         <div class="form__group">
                             <label for="message" class="required-after">Message</label>
-                            <textarea class="form__textarea textfield" name="message" cols="50" rows="10" id="message">Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?</textarea>
+                            <textarea class="form__textarea textfield" name="message" cols="50" rows="10" id="message"><?= $isPost ? htmlspecialchars($message) : "Hi, I am interested in discussing a Our Offices solution, could you please give me a call or send an email?"; ?></textarea>
                         </div>
                         <div class="form__group">
                             <label class="form__marketing-wrapper">
                                 <span class="form__marketing">
                                     <span>
-                                        <input class="form__checkbox-hidden" name="marketing_preference" type="checkbox" value="1">
+                                        <input class="form__checkbox-hidden" name="marketing" type="checkbox" <?= $marketing == "on" ? "checked" : ""?>>
                                         <span class="form__checkbox-custom"></span>
                                     </span>
                                     <span>

@@ -7463,10 +7463,11 @@ label {
 }
 
 /* line 8, ../../../../../xampp/htdocs/websites/NetmattersHomepage/sass/abstracts/mixins/_bem.scss */
-.form__btn {
+.form__status-btn {
   font-size: 21px;
   font-weight: 700;
   line-height: 1;
+  background: transparent;
   padding: 0;
   border: 0;
   opacity: .2;

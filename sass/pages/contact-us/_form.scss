@@ -72,8 +72,9 @@
     }
     
     // Close btn for status message.
-    @include e(btn) {
+    @include e(status-btn) {
         @include font($size: 21px, $wght: 700, $hght: 1);
+        background: transparent;
         padding: 0;
         border: 0;
         opacity: .2;
