@@ -60,4 +60,24 @@
     }
 
     @include e(helper) { font-size: 85%; }
+
+    // Box for showing form status messages.
+    @include e(status) {
+        @include flex($disp: flex, $just: space-between); // Put text and close btn on opposite sides.
+        @include property-color-modifiers($color-map--form-status);
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        border-radius: 2px;
+    }
+    
+    // Close btn for status message.
+    @include e(btn) {
+        @include font($size: 21px, $wght: 700, $hght: 1);
+        padding: 0;
+        border: 0;
+        opacity: .2;
+        -webkit-appearance: none;
+        cursor: pointer;
+    }
 }
