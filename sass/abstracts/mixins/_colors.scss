@@ -40,3 +40,14 @@
 		}
 	}
 }
+
+// Add property color modifier classes for nested color maps.
+@mixin property-color-modifiers($color-map) {
+    @each $theme, $properties in $color-map {
+        &--#{$theme} {
+            @each $property, $value in $properties {
+                #{$property}: $value;
+            }
+        }
+    }
+}
