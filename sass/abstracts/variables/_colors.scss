@@ -93,3 +93,16 @@ $color-map--btns-dark: (
     primary             : #22242e,
     primary-inverse     : #121318,
 );
+
+$color-map--form-status: (
+    error: (
+        color               : #a94442,
+        background-color    : #f2dede,
+        border-color        : #ebccd1
+    ),
+    success: (
+        color               : #fff,
+        background-color    : #2ecc71,
+        border-color        : #d6e9c6
+    ),
+);
