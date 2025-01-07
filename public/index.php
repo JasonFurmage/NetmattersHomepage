@@ -6,6 +6,7 @@
 // Load dependencies.
 require_once '../config/bootstrap.php';
 require_once '../includes/connection.php';
+require_once '../includes/articles.php';
 
 // Define variables.
 $pageTitle = 'Full Service Digital Agency | Cambridgeshire & Norfolk | Netmatters';
