@@ -87,12 +87,24 @@ function saveToDatabase($pdo, $name, $company, $email, $telephone, $message, $ma
     }
 }
 
-// Insert form status element to show any error messages.
-function showFormStatus($errors) { 
-    $statusBtn = '<button type="button" class="form__status-btn">x</button>';
-    $statusClass = empty($errors) ? 'form__status--success' : 'form__status--error';
-    $statusMessages = empty($errors) ? 'Your message has been sent!' : implode($statusBtn . '</div><div class="form__status form__status--error">', $errors);
-    echo '<div><div class="form__status ' . $statusClass . '">' . $statusMessages . $statusBtn . '</div></div>';
+// Insert form status into HTML.
+function insertFormStatus($errors) {
+    
+    // Show succcss message if there are no errors.
+    if (empty($errors)) {
+        echo generateFormStatusHTML('Your message has been sent!', 'form__status--success');
+        return;
+    }
+
+    // Loop through errrors and generate HTML.
+    foreach ($errors as $error) {
+        echo generateFormStatusHTML($error, 'form__status--error');
+    }
+}
+
+// Generate form status HTML and set modifier class for color scheme.
+function generateFormStatusHTML($error, $class) {
+    return '<div class="form__status ' . $class . '">' . $error . '<button type="button" class="form__status-btn">x</button></div>';
 }
 
 ?>
