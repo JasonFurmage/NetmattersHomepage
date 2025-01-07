@@ -9,8 +9,9 @@ try {
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $articles = $stmt->fetchAll(PDO::FETCH_ASSOC);
-} catch (PDOException $e) {
-    error_log("Error fetching table: " . $e->getMessage());
+} catch (PDOException $exception) {
+    handleError($exception);
+    die("Database connection failed. Please try again later.");
 }
 
 // Insert articles into HTML.

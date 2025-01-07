@@ -81,8 +81,7 @@ function saveToDatabase($pdo, $name, $company, $email, $telephone, $message, $ma
         return $stmt->execute($params);
 
     } catch (PDOException $e) {
-        error_log("Database error: " . $e->getMessage());
-        echo $e->getMessage();
+        handleError($exception);
         return false;
     }
 }

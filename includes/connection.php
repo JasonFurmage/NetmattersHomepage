@@ -15,8 +15,9 @@ $options = $dbConfig['options'];
 // Attempt to connect to database.
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$name", $user, $pass, $options);
-} catch (PDOException $e) {
-    die("Database connection failed: " . $e->getMessage());
+} catch (PDOException $exception) {
+    handleError($exception);
+    die("Database connection failed. Please try again later.");
 }
 
 ?>

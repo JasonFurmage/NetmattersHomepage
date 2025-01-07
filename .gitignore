@@ -4,6 +4,14 @@ Thumbs.db           # Windows system file
 
 # Ignore environment variables file
 .env
+.env.dev
+.env.pro
+
+# Ignore .htaccess
+.htaccess
+
+# Ignore log files
+/logs/
 
 # Ignore vendor directory
 /vendor/
