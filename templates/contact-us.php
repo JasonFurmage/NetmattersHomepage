@@ -95,7 +95,7 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <form class="form" method="POST" action="#form" accept-charset="UTF-8" id="form" novalidate="novalidate">
+                    <form class="form" method="POST" action="#form" accept-charset="UTF-8" novalidate="novalidate" id="form">
                         <?php if ($isPost) { echo '<div>'; insertFormStatus($errors); echo '</div>'; } ?>
                         <div class="row">
                             <div class="col-md-6">
