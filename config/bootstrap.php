@@ -5,7 +5,7 @@
 
 // Load composer autoloader.
 require_once '../vendor/autoload.php';
-require_once '../includes/helper.php';
+require_once '../includes/helpers.php';
 
 use Dotenv\Dotenv;
 
