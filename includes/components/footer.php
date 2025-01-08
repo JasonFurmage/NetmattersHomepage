@@ -27,7 +27,7 @@
                                     <li class="footer__link"><a href="#">News</a></li>
                                     <li class="footer__link"><a href="#">Our Careers</a></li>
                                     <li class="footer__link"><a href="#">Our Team</a></li>
-                                    <li class="footer__link"><a href="#">Contact Us</a></li>
+                                    <li class="footer__link"><a href="contact-us.php">Contact Us</a></li>
                                     <li class="footer__link"><a href="#">Privacy Policy</a></li>
                                     <li class="footer__link"><a href="#">Cookie Policy</a></li>
                                     <li class="footer__link"><a href="#">Data Retention &amp; Disposal Policy</a></li>
