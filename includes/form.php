@@ -91,7 +91,7 @@ function insertFormStatus($errors) {
     
     // Show succcss message if there are no errors.
     if (empty($errors)) {
-        echo generateFormStatusHTML('Your message has been sent!', 'form__status--success');
+        echo generateFormStatusHTML('Your enquiry has been sent.', 'form__status--success');
         return;
     }
 
