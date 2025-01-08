@@ -11,7 +11,7 @@ use Dotenv\Dotenv;
 
 // Attempt to load env variables.
 try {
-    $dotenv = Dotenv::createImmutable("../", ['.env.dev']);
+    $dotenv = Dotenv::createImmutable("../", ['.env']);
     $dotenv->load();
 } catch (Exception $exception) {
     handleError($exception);
