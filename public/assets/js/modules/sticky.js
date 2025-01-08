@@ -41,6 +41,7 @@ function delayedAction(action) {
 
 // Remove sticky header without animation.
 function mergeHeaders() {
+    header.removeAttribute('style'); // Show original header.
     stickyHeader.remove();
     animating = false;
 }
@@ -49,7 +50,11 @@ function mergeHeaders() {
 function toggleStickyHeader(animationName, show) {
     animating = true;
     stickyHeader.className = `sticky animate__animated animate__${animationName}`;
-    if (show) document.body.appendChild(stickyHeader);
+
+    if (show) {
+        document.body.appendChild(stickyHeader);
+        header.style.opacity = 0; // Hide original header.
+    }
 
     stickyHeader.addEventListener('animationend', () => {
         if (!show) stickyHeader.remove();

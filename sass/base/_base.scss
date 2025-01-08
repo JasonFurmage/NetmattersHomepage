@@ -7,11 +7,6 @@
     box-sizing: border-box;
 }
 
-// Prevent scroll bounce.
-html {
-    overscroll-behavior: none;
-}
-
 body {
     @include font($size: rem(16px), $hght: $line-height, $spce: $letter-spacing, $color: $color--grey-dark);
     font-family: $font-family;

@@ -4823,10 +4823,6 @@ template {
   box-sizing: border-box;
 }
 
-html {
-  overscroll-behavior: none;
-}
-
 body {
   font-size: 1rem;
   line-height: 1.42857;
