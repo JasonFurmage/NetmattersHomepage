@@ -10,16 +10,14 @@
         @include color-modifiers($color-map--services);
     }
 
-    // Underline accordion on hover.
-    @include e(accordion-wrapper) {
-        &:hover { 
-            .contact__accordion { text-decoration: underline; }
-        }
-    }
-
     @include e(accordion) {
         font-weight: $font-weight--semi-bold;
-        pointer-events: none; // Prevent clicking link.
+        cursor: pointer;
+
+        // Underline accordion on hover.
+        &:hover { 
+            text-decoration: underline;
+        }
     }
 
     // Hide accordion panel by default.

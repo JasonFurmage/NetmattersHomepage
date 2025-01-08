@@ -6744,13 +6744,13 @@ label {
   color: #db8c0d;
 }
 
-.contact__accordion-wrapper:hover .contact__accordion {
-  text-decoration: underline;
-}
-
 .contact__accordion {
   font-weight: 600;
-  pointer-events: none;
+  cursor: pointer;
+}
+
+.contact__accordion:hover {
+  text-decoration: underline;
 }
 
 .contact__accordion-panel {
