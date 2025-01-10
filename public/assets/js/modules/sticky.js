@@ -41,7 +41,7 @@ function delayedAction(action) {
 
 // Remove sticky header without animation.
 function mergeHeaders() {
-    header.removeAttribute('style'); // Show original header.
+    toggleOriginalHeader(true);
     stickyHeader.remove();
     animating = false;
 }
@@ -50,14 +50,20 @@ function mergeHeaders() {
 function toggleStickyHeader(animationName, show) {
     animating = true;
     stickyHeader.className = `sticky animate__animated animate__${animationName}`;
-
-    if (show) {
-        document.body.appendChild(stickyHeader);
-        header.style.opacity = 0; // Hide original header.
-    }
+    if (show) document.body.appendChild(stickyHeader);
+    toggleOriginalHeader(!show);
 
     stickyHeader.addEventListener('animationend', () => {
         if (!show) stickyHeader.remove();
         animating = false;
+
+        // Incase top of page was reached during animation.
+        if (lastScrollTop === 0) mergeHeaders();
+        
     }, { once: true });
+}
+
+// Show or hide original header.
+function toggleOriginalHeader(show) {
+    show ? header.removeAttribute('style') : header.style.opacity = 0;
 }
