@@ -1,6 +1,6 @@
 # Ignore system files
-.DS_Store           # macOS system file
-Thumbs.db           # Windows system file
+.DS_Store
+Thumbs.db
 
 # Ignore environment variables file
 .env
@@ -17,4 +17,4 @@ Thumbs.db           # Windows system file
 /vendor/
 
 # Ignore vscode files
-.vscode/            # Visual Studio Code
+.vscode/
