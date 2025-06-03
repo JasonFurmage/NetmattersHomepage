@@ -5,10 +5,6 @@ Thumbs.db
 # Ignore environment variables file
 .env
 .env.dev
-.env.pro
-
-# Ignore .htaccess
-.htaccess
 
 # Ignore log files
 /logs/

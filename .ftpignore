@@ -1,0 +1,10 @@
+# GIT & GitHub
+.git/
+.github/
+.gitignore
+.gitattributes
+
+# Sass source files
+sass/
+*.scss
+*.sass
