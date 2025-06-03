@@ -5,6 +5,6 @@
 .gitattributes
 
 # Sass source files
-sass/
+/sass/
 *.scss
 *.sass
