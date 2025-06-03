@@ -1,11 +1,11 @@
-# GIT & GitHub
+# Ignore directories.
 .git/
 .github/
+sass/
+
+# Ignore files.
 .gitignore
 .gitattributes
 .ftpignore
-
-# Sass source files
-/sass/
 *.scss
 *.sass
