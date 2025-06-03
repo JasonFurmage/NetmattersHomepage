@@ -3,6 +3,7 @@
 .github/
 .gitignore
 .gitattributes
+.ftpignore
 
 # Sass source files
 /sass/
