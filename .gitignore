@@ -1,9 +1,9 @@
-# Ignore directories
+# Ignore directories.
 .vscode/
 logs/
 vendor/
 
-# Ignore files
+# Ignore files.
 .env
 .DS_Store
 Thumbs.db
