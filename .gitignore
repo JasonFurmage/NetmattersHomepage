@@ -1,16 +1,9 @@
-# Ignore system files
+# Ignore directories
+.vscode/
+logs/
+vendor/
+
+# Ignore files
+.env
 .DS_Store
 Thumbs.db
-
-# Ignore environment variables file
-.env
-.env.dev
-
-# Ignore log files
-/logs/
-
-# Ignore vendor directory
-/vendor/
-
-# Ignore vscode files
-.vscode/
