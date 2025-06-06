@@ -20,11 +20,11 @@ return [
     ],
 
     'error' => [
-        'error_reporting'   => $env == 'dev' ? E_ALL : E_ERROR | E_WARNING | E_PARSE,   // Sets the level of errors to report.
-        'display_errors'    => $env == 'dev' ? 1 : 0,                                   // Determines if errors should be shown in browser.
-        'html_errors'       => $env == 'dev' ? 1 : 0,                                   // Enables/disables HTML formatting for error messages in browser.
-        'track_errors'      => $env == 'dev' ? 1 : 0,                                   // Tracks last error message in $php_errormsg variable.
-        'log_errors'        => $env == 'dev' ? 1 : 1,                                   // Enables error logging to a file.
+        'error_reporting'   => $env == 'local' ? E_ALL : E_ERROR | E_WARNING | E_PARSE,   // Sets the level of errors to report.
+        'display_errors'    => $env == 'local' ? 1 : 0,                                   // Determines if errors should be shown in browser.
+        'html_errors'       => $env == 'local' ? 1 : 0,                                   // Enables/disables HTML formatting for error messages in browser.
+        'track_errors'      => $env == 'local' ? 1 : 0,                                   // Tracks last error message in $php_errormsg variable.
+        'log_errors'        => $env == 'local' ? 1 : 1,                                   // Enables error logging to a file.
         'error_log'         => '../logs/error.log',                                     // Specifies file where errors are logged.
     ]
 ];

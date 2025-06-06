@@ -7,7 +7,7 @@
 function handleError($exception) {
 
     // Display error message in browser in development.
-    if ((isset($_ENV['APP_ENV'])) && $_ENV['APP_ENV']  === 'dev') {
+    if ((isset($_ENV['APP_ENV'])) && $_ENV['APP_ENV']  === 'local') {
         echo "<strong>Error:</strong> " . $exception->getMessage() . "<br>";
         echo "<strong>File:</strong> " . $exception->getFile() . "<br>";
         echo "<strong>Line:</strong> " . $exception->getLine() . "<br>";
